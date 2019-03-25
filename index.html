@@ -15,24 +15,45 @@
 
       <!-- Navigation bar section -->
       <div class="row">
-        <div class="column">
-
+        <div class="col-2">
+            <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive bg-success position-absolute">
         </div>
       </div>
 
+    <div class="row nav-bar d-flex flex-row justify-content-center mt-5">
+        <a class="nav-items col-1 offset-md-4 mt-1" href="https://atomist.com/developer.html" style="color:inherit">Developer</a>
+        <a href="https://atomist.com/pricing.html" class="nav-items col-1 mt-1" style="color:inherit">Pricing</a>
+        <a href="https://docs.atomist.com/?_ga=2.174237226.948132213.1553277995-6570700.1552576324" class="nav-items col-1 mt-1" style="color:inherit">Docs</a>
+        <a href="https://blog.atomist.com/?_ga=2.174237226.948132213.1553277995-6570700.1552576324" class="nav-items col-1 mt-1" style="color:inherit" style="color:inherit">Blog</a>
+        <a href="https://app.atomist.com/user/login?_ga=2.246771340.948132213.1553277995-6570700.1552576324" class="col-1 text-right offset-md-2 mt-1" style="color:inherit">Sign in</a>
+        <button class="col-1 text-nowrap btn btn-outline-secondary" onclick="window.location.href = 'https://app.atomist.com/user/signup?_ga=2.246771340.948132213.1553277995-6570700.1552576324';" >Get Started</button>            
+        <!-- <div class="nav-items">Sign in</div>
+        <div class="nav-items">Get Started</div> -->
+    </div>
 
       <!-- Intro section -->
-      <div class="row">
-        <div class="column">
-
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="container col-6">
+              <h1 class="text-center mt-5" style="font-size: 60px">The Self-Service Delivery Platform</h1>
+              <div class="text-center mt-3" style="font-size:38px">Unleash autonomy</div>
+              <img src="http://placekitten.com/100/100" id="app-img-sample" class="mx-auto d-block mt-5">
+              <div class="text-center container mt-2">Atomist enables Self-Service Delivery, so that delivering your app just takes a <span id="git-push-border">git push</span>. Define automated delivery flows that smartly review, autofix, build, test and deploy.
+                  No pipeline required.</div>
+              <button class="text-nowrap btn btn-outline-secondary mx-auto d-block mt-5" style="width:auto">Get Started for Free</button>
         </div>
       </div>
 
 
       <!-- What is section -->
-      <div class="row">
-        <div class="col">
+      <div class="light-gray-bg mt-5">
+        <div class="row container m-auto ">
+            <div class="col">
+                <h2 class="text-center">What is Self-Service Delivery?
+                </h2> 
+                <p class="text-center">Self-Service Delivery removes the friction of having to request an environment for a project, or the toil of setting up the delivery process yourself. It puts the entire delivery process in front of you, so that you always have visibility and control. The information and tools necessary to ship great software are right at your fingertips, enabling you to start new projects, develop and have those projects delivered automatically.<br/><br/>
 
+                    Delivery is more than the act of building, testing and deploying. Delivery is everything you do in order to ship, including creating new projects, updating dependencies, refactoring code and countless more tasks. Self-Service Delivery means that you can develop and automate your own tasks, to scratch your own itches.</p>
+            </div>
         </div>
       </div>
 
