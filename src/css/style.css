@@ -78,3 +78,14 @@ p{
 .bg-gray{
     background-color: rgb(247,247,247);
 }
+
+@media (min-width: 1200px){
+    #nav-button{
+        visibility: hidden;
+    }
+}
+@media (max-width: 1200px){
+        #nav-bar{
+        visibility: hidden;
+    }
+}
