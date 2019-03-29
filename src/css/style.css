@@ -1,0 +1,63 @@
+#banner{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 70vh;
+}
+#atomist-logo{
+    left: 0;
+}
+#img-goals{
+    width: 90vh;
+}
+#git-push-border{
+    border: 1px solid rgb(221,221,221);
+    color: rgb(34,127,126);
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+.btn-primary{
+    font-size: 1rem;
+    font-family: "Tofino", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", sans-serif;
+    color: white;
+/*    border-radius: 5px;*/
+    background-color: rgb(91,195,153);
+    border: none;
+}
+.btn-primary:hover{
+    background-color: rgb(67,183,136);
+}
+.btn-secondary{
+    color: white;
+    background-color: rgb(34,127,126);
+}
+.btn-secondary:hover{
+    background-color: rgb(29,99,98);
+}
+.font-primary{
+    color: rgb(42,42,42);
+    font-family: "Tofino", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", sans-serif;
+}
+.font-secondary{
+    color: rgb(70,70,70);
+    font-family: "Tofino", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", sans-serif;    
+}
+.btn-article{
+    border: 2px solid;
+    color: rgb(91,195,153);
+    border-color: rgb(91,195,153);
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+h5{
+    
+}
+
+p{
+    
+}
+
+.bg-gray{
+    background-color: rgb(247,247,247);
+}

@@ -8,10 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+
     <title>Atomist | Software delivery information for cloud-native applications</title>
   </head>
   <body>
-    <div class="container">
+
+      <img src="src/assets/atomist_logo_shapes_banner-home.jpg" id="banner">
+<div class="row">
+      <div class="col-2">
+          <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute">
+      </div>
+  </div>
+
+    <div class="container-fluid">
 
       <!-- Navigation bar section -->
       <div class="row">
@@ -21,36 +31,36 @@
         </div>
       </div>
 
-    <div class="row nav-bar d-flex flex-row justify-content-center mt-5">
+    <div class="row nav-bar d-flex flex-row justify-content-center mt-5" style="color:white">
         <a class="nav-items col-1 offset-md-4 mt-1" href="https://atomist.com/developer.html" style="color:inherit">Developer</a>
         <a href="https://atomist.com/pricing.html" class="nav-items col-1 mt-1" style="color:inherit">Pricing</a>
         <a href="https://docs.atomist.com/?_ga=2.174237226.948132213.1553277995-6570700.1552576324" class="nav-items col-1 mt-1" style="color:inherit">Docs</a>
         <a href="https://blog.atomist.com/?_ga=2.174237226.948132213.1553277995-6570700.1552576324" class="nav-items col-1 mt-1" style="color:inherit" style="color:inherit">Blog</a>
-        <a href="https://app.atomist.com/user/login?_ga=2.246771340.948132213.1553277995-6570700.1552576324" class="col-1 text-right offset-md-2 mt-1" style="color:inherit">Sign in</a>
-        <button class="col-1 text-nowrap btn btn-outline-secondary" onclick="window.location.href = 'https://app.atomist.com/user/signup?_ga=2.246771340.948132213.1553277995-6570700.1552576324';" >Get Started</button>            
-        <!-- <div class="nav-items">Sign in</div>
-        <div class="nav-items">Get Started</div> -->
+        <a href="https://app.atomist.com/user/login?_ga=2.246771340.948132213.1553277995-6570700.1552576324" class="col-1 text-right offset-md-2 mt-1" style="color:inherit">Log in</a>
+        <button class="col-1 text-nowrap btn btn-primary" onclick="window.location.href = 'https://app.atomist.com/user/signup?_ga=2.246771340.948132213.1553277995-6570700.1552576324';" >Get Started</button>
     </div>
 
       <!-- Intro section -->
-        <div class="row mt-5 d-flex justify-content-center">
-            <div class="container col-6">
-              <h1 class="text-center mt-5" style="font-size: 60px">The Self-Service Delivery Platform</h1>
-              <div class="text-center mt-3" style="font-size:38px">Unleash autonomy</div>
-              <img src="http://placekitten.com/100/100" id="app-img-sample" class="mx-auto d-block mt-5">
-              <div class="text-center container mt-2">Atomist enables Self-Service Delivery, so that delivering your app just takes a <span id="git-push-border">git push</span>. Define automated delivery flows that smartly review, autofix, build, test and deploy.
-                  No pipeline required.</div>
-              <button class="text-nowrap btn btn-outline-secondary mx-auto d-block mt-5" style="width:auto">Get Started for Free</button>
-        </div>
+
+      <div class="row mt-5 d-flex ">
+          <div class="container col-6">
+            <h1 class="text-center mt-5" style="font-size: 60px;color:white">The Self-Service Delivery Platform</h1>
+            <div class="text-center mt-3" style="font-size:38px;color:white">Unleash autonomy</div>
+            <img id="img-goals" src="src/assets/App-SDM-Goals-Execution.png" class="mt-5">
+            <div class="text-center container mt-2">Atomist enables Self-Service Delivery, so that delivering your app just takes a <span id="git-push-border">git push</span>. Define automated delivery flows that smartly review, autofix, build, test and deploy.
+                No pipeline required.</div>
+            <button class="text-nowrap btn btn-primary mx-auto d-block mt-5" style="width:auto">Get Started for Free</button>
       </div>
+    </div>
 
 
       <!-- What is section -->
-      <div class="light-gray-bg mt-5">
-        <div class="row container m-auto ">
+
+      <div class="bg-gray mt-5">
+        <div class="row container m-auto">
             <div class="col">
                 <h2 class="text-center">What is Self-Service Delivery?
-                </h2> 
+                </h2>
                 <p class="text-center">Self-Service Delivery removes the friction of having to request an environment for a project, or the toil of setting up the delivery process yourself. It puts the entire delivery process in front of you, so that you always have visibility and control. The information and tools necessary to ship great software are right at your fingertips, enabling you to start new projects, develop and have those projects delivered automatically.<br/><br/>
 
                     Delivery is more than the act of building, testing and deploying. Delivery is everything you do in order to ship, including creating new projects, updating dependencies, refactoring code and countless more tasks. Self-Service Delivery means that you can develop and automate your own tasks, to scratch your own itches.</p>
@@ -67,6 +77,7 @@
               <h4>Atomist Enables Self-Service Software Delivery</h4>
             </div>
           </div>
+
           <!-- first two cards -->
           <div class="row">
             <div class="col">
@@ -215,6 +226,72 @@
       <!-- Powered by atomist section -->
       <div class="row">
         <div class="col">
+
+          <div class="row text-center pt-4 pb-5">
+            <div class="col">
+              <h2>The Platform for Self-Service Delivery</h2>
+              <p>Enabling Self-Service Delivery requires support to put control in the hands of the developer,
+                and the engine to intelligently automate the delivery process.
+                The heart of Atomist is the Software Delivery Machine (SDM).
+                It’s an event-driven delivery automation engine that maintains a
+                rich model of your app and delivery flow and is fully programmable in code.</p>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col">
+              <h5>Get Started with Self-Service Delivery</h5>
+              <br>
+            </div>
+          </div>
+
+          <div class="row pb-5">
+            <div class="col">
+
+              <div class="card-deck">
+
+                <div class="card shadow-lg border-0 rounded-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Cloud-Hosted SDM</h5>
+                    <h6 class="card-subtitle text-muted">Hosted SDM for use delivering Node apps to Kubernetes</h6>
+                    <br>
+                    <ul>
+                      <li>Delivery for Node apps to Kubernetes built-in</li>
+                      <li>Create and deliver Node applications</li>
+                      <li>Automatic autofix (lint), build, test, Docker build and deploy to Docker registry</li>
+                      <li>Test deploy to Atomist-hosted Kubernetes cluster</li>
+                      <li>Deploy to your own Kubernetes cluster</li>
+                    </ul>
+                    <br>
+                    <h6 class="card-subtitle text-muted">Get started delivering Node applications right now.</h6>
+                    <br>
+                    <a class="btn btn-success" role="button" href="#">Get Started for Free</a>
+                  </div>
+                </div>
+
+                <div class="card shadow-lg border-0 rounded-0">
+                  <div class="card-body">
+                    <h5 class="card-title">Self-Hosted SDM</h5>
+                    <h6 class="card-subtitle text-muted">Fully customizable delivery for multiple language stacks and deployment environments</h6>
+                    <br>
+                    <ul>
+                      <li>Run SDM anywhere (self-hosted)</li>
+                      <li>Use and customize pre-built SDMs</li>
+                      <li>Integrate with on-premises development and deployment tools</li>
+                      <li>Use with GitHub, BitBucket or GitLab</li>
+                      <li>Add functionality with Extension Packs</li>
+                    </ul>
+                    <br>
+                    <h6 class="card-subtitle text-muted">Get started with your own SDM right now.</h6>
+                    <br>
+                    <a class="btn btn-success" role="button" href="#">Install</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
 
         </div>
       </div>
@@ -381,7 +458,7 @@
                     <li class="mr-5 ml-5"><a href="https://join.atomist.com/?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-slack fa-2x"></i></a></li>
                     <li><a href="https://www.youtube.com/channel/UCvKTtZtPh_MHkQJuAgvzKOA?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-youtube fa-2x"></i></a></li>
                   </ul>
-                </nav>    
+                </nav>
             </div>
           </div>
           <div class="row mb-4">
@@ -389,7 +466,7 @@
               <p>
                 Created with ❤️ by Atomist in San Francisco & Beyond<br>
                 Copyright © 2019 Atomist. All Rights Reserved.
-              </p>    
+              </p>
             </div>
           </div>
           <div class="row mb-5">
@@ -399,7 +476,7 @@
                   <li class="mr-4"><a href="terms.html">Terms</a></li>
                   <li><a href="privacy.html">Privacy</a></li>
                 </ul>
-              </nav>    
+              </nav>
             </div>
           </div>
         </div>
