@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Atomist | Software delivery information for cloud-native applications</title>
@@ -62,7 +63,12 @@
     <div class="container-fluid">
         
       <!-- Navigation bar section -->
+      <div class="row">
 
+        <div class="col-2">
+            <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive bg-success position-absolute">
+        </div>
+      </div>
 
     <div class="row d-flex flex-row justify-content-center mt-5 mr-1" style="color:white" id="nav-bar">
         <a class="nav-items col-1 offset-md-4 mt-1" href="https://atomist.com/developer.html" style="color:inherit">Developer</a>
@@ -105,7 +111,6 @@
       <!-- Atomist enables, cards section -->
       <div class="row">
         <div class="col">
-
           <div class="row text-center pt-5">
             <div class="col">
               <h4>Atomist Enables Self-Service Software Delivery</h4>
@@ -332,145 +337,182 @@
 
 
       <!-- Latest from atomist section -->
-      <div class="row">
+      <div class="row mb-5">
         <div class="col">
-          <h3>The Latest from Atomist</h3>
-          <div class="card">
-            <img src="src/assets/wordcloud.png" alt="">
-            <div class="card-body">
-            <h4>Posted by Rod Johnson</h4>
-            <h3>Evolving Understanding of Delivery</h3>
-            <p>
-              Two new terms have recently emerged around software delivery: Software Defined
-              Delivery and Progressive Delivery. Why? How do they relate to Continuous Delivery?
-              Several forces today make delivery increasingly complex. Notably, proliferation of
-              repositories, with hundreds of small projects replacing a handful of monoliths;
-              desire for greater automation to realize the full potential of CD across multiple
-              environments; the rise of feature flagging; and increased evidence (such as the
-              Equifax debacle)
-            </p>
-            <button>Read article</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="src/assets/l8istsh9ny.jpeg" alt="">
-            <div class="card-body">
-            <h4>Posted by Ryan Day</h4>
-            <h3>Event-Driven Software Delivery</h3>
-            <p>
-              Atomist co-founder and Chief Architect, Jim Clark, recently sat in with Rob Hirschfeld
-              for an episode of the L8ist Sh9y Podcast. It's a wide-ranging conversation about delivery
-              as workflow, event-driven delivery, code analysis, GraphQL and ChatOps.
-            </p>
-            <button>Read article</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="src/assets/Podcast-Makers-1.png" alt="">
-            <div class="card-body">
-            <h4>Posted by Ryan Day</h4>
-            <h3>Remove What You Hate 😡 from Software Development</h3>
-            <p>
-              My co-founder, Rod Johnson recently talked with Gene Kim, (see “The Phoenix Project” and
-              “The DevOps Handbook”), and Alex Williams of The New Stack on The Makers podcast.
-            </p>
-            <button>Read article</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="src/assets/tiny-graph-1.png" alt="">
-            <div class="card-body">
-            <h4>Posted by Jessica Kerr</h4>
-            <h3>Problems you shouldn't have</h3>
-            <p>
-              The other day I heard a sad story about a build that was broken for weeks due to a bug
-              introduced in an open-source library. It took the maintainer a long time to fix it
-              (they're not getting paid for this, no criticism). In the enterprise they had so many
-              layers of repository caching the team couldn't escape the buggy version. Even sadder,
-              that library existed for fancy terminal output of a library that produced documentation
-              (typedoc). A nonessential feature of a nonessential build step blocked
-            </p>
-            <button>Read article</button>
-            </div>
-          </div>
-          <div class="card">
-              <img src="src/assets/Image-from-iOS--44-.jpg" alt="">
-              <div class="card-body">
-              <h4>Posted by John Doe</h4>
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquam odio molestias
-                doloribus consequuntur ipsa labore ab consectetur suscipit esse est quam, enim doloremque
-                facere maxime velit error, ducimus temporibus.
-              </p>
-              <button>Read article</button>
+          <h5>The Latest from Atomist</h5>
+          <div class="card mb-1 border-light">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                  <img class="card-img mt-3 img-thumbnail" src="src/assets/wordcloud.png" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                    <h6 class="card-subtitle text-muted mb-2">Posted by Rod Johnson</h6.s>
+                    <h5 class="card-title mb-2">Evolving Understanding of Delivery</h5>
+                    <p>
+                      Two new terms have recently emerged around software delivery: Software Defined 
+                      Delivery and Progressive Delivery. Why? How do they relate to Continuous Delivery?
+                      Several forces today make delivery increasingly complex. Notably, proliferation of 
+                      repositories, with hundreds of small projects replacing a handful of monoliths; 
+                      desire for greater automation to realize the full potential of CD across multiple 
+                      environments; the rise of feature flagging; and increased evidence (such as the 
+                      Equifax debacle)
+                    </p>
+                    <button class="btn-article">Read article</button>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="card mb-1 border-light">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img class="card-img mt-3" src="src/assets/l8istsh9ny.jpeg" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-muted mb-2">Posted by Ryan Day</h6>
+                  <h5 class="card-title">Event-Driven Software Delivery</h5>
+                  <p>
+                    Atomist co-founder and Chief Architect, Jim Clark, recently sat in with Rob Hirschfeld 
+                    for an episode of the L8ist Sh9y Podcast. It's a wide-ranging conversation about delivery 
+                    as workflow, event-driven delivery, code analysis, GraphQL and ChatOps.
+                  </p>
+                  <button class="btn-article">Read article</button>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="card mb-1 border-light">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img class="card-img mt-3" src="src/assets/Podcast-Makers-1.png" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-muted mb-2">Posted by Ryan Day</h6>
+                  <h5 class="card-title">Remove What You Hate 😡 from Software Development</h5>
+                  <p>
+                    My co-founder, Rod Johnson recently talked with Gene Kim, (see “The Phoenix Project” and 
+                    “The DevOps Handbook”), and Alex Williams of The New Stack on The Makers podcast.
+                  </p>
+                  <button class="btn-article">Read article</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1 border-light">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img class="card-img mt-3" src="src/assets/tiny-graph-1.png" alt="">
+              </div>
+              <div class="col-md-10">
+                  <div class="card-body">
+                    <h6 class="card-subtitle text-muted mb-2">Posted by Jessica Kerr</h6>
+                    <h5 class="card-title">Problems you shouldn't have</h5>
+                    <p>
+                      The other day I heard a sad story about a build that was broken for weeks due to a bug 
+                      introduced in an open-source library. It took the maintainer a long time to fix it 
+                      (they're not getting paid for this, no criticism). In the enterprise they had so many 
+                      layers of repository caching the team couldn't escape the buggy version. Even sadder, 
+                      that library existed for fancy terminal output of a library that produced documentation 
+                      (typedoc). A nonessential feature of a nonessential build step blocked 
+                    </p>
+                    <button class="btn-article">Read article</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1 border-light">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img class="card-img mt-3" src="src/assets/Image-from-iOS--44-.jpg" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h6 class="card-subtitle text-muted mb-2">Posted by John Doe</h6>
+                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquam odio molestias
+                    doloribus consequuntur ipsa labore ab consectetur suscipit esse est quam, enim doloremque 
+                    facere maxime velit error, ducimus temporibus. Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Ea commodi omnis reprehenderit quod aliquam natus autem facilis officiis? 
+                    At est exercitationem quibusdam doloribus magni iste suscipit, voluptatibus iusto esse 
+                    accusantium ea excepturi voluptas illo, quasi, numquam dolores explicabo nihil sit!
+                  </p>
+                  <button class="btn-article">Read article</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
 
       <!-- Ready to try section -->
-      <div class="row">
+      <div class="row mb-5 pt-5 pb-5 text-center">
         <div class="col">
-          <h1>Ready to try Atomist?</h1>
-          <p>Go from brand new project to deployed in minutes.</p>
+          <h2 class="mb-4">Ready to try Atomist?</h2>
+          <p class="mb-4">Go from brand new project to deployed in minutes.</p>
           <button>Get Started for Free</button>
         </div>
       </div>
-
+      <!-- End of Ready to try section -->
 
       <!-- Footer section -->
-      <div class="row">
+      <div class="row text-center">
         <div class="col">
-          <div class="row">
+          <div class="row mb-4">
             <div class="col">
-              <img src="src/assets/Atomist-Mark-Color.png" alt="">
+              <img src="src/assets/Atomist-Mark-Color.png" alt="" style="width: 50px">
             </div>
           </div>
-          <div class="row">
+          <div class="row mb-4">
             <div class="col">
-              <nav>
-                  <ul>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="developer.html">Developers</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="https://github.com/atomist?_ga=2.189617570.829129499.1553291524-1714051839.1552404641">Open Source</a></li>
-                    <li><a href="https://blog.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Blog</a></li>
-                    <li><a href="https://docs.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Docs</a></li>
-                    <li><a href="resources.html">Resources</a></li>
+              <nav class="nav justify-content-center">
+                <ul class="nav flex-column text-right">
+                  <li class="mb-4"><a href="pricing.html">Pricing</a></li>
+                  <li class="mb-4"><a href="">Product</a></li>
+                  <li class="mb-4"><a href="developer.html">Developers</a></li>
+                </ul>
+                <ul class="nav flex-column ml-5 mr-5">
+                  <li class="mb-4"><a href="about.html">About</a></li>
+                  <li class="mb-4"><a href="careers.html">Careers</a></li>
+                  <li class="mb-4"><a href="">Contact</a></li>
+                  <li class="mb-4"><a href="https://github.com/atomist?_ga=2.189617570.829129499.1553291524-1714051839.1552404641">Open Source</a></li>
+                </ul>
+                <ul class="nav flex-column text-left">
+                  <li class="mb-4"><a href="https://blog.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Blog</a></li>
+                  <li class="mb-4"><a href="https://docs.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Docs</a></li>
+                  <li class="mb-4"><a href="resources.html">Resources</a></li>
+                </ul>    
+              </nav>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col">
+              <nav class="nav justify-content-center">
+                  <ul class="nav">
+                    <li><a href="https://twitter.com/atomist?_ga=2.201162279.829129499.1553291524-1714051839.1552404641"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li class="ml-5"><a href="https://github.com/atomist?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-github fa-2x"></i></a></li>
+                    <li class="mr-5 ml-5"><a href="https://join.atomist.com/?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-slack fa-2x"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCvKTtZtPh_MHkQJuAgvzKOA?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-youtube fa-2x"></i></a></li>
                   </ul>
                 </nav>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <nav>
-                  <ul>
-                    <li><a href="https://twitter.com/atomist?_ga=2.201162279.829129499.1553291524-1714051839.1552404641"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/atomist?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://join.atomist.com/?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-slack"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCvKTtZtPh_MHkQJuAgvzKOA?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-youtube"></i></a></li>
-                  </ul>
-                </nav>
-            </div>
-          </div>
-          <div class="row">
+          <div class="row mb-4">
             <div class="col">
               <p>
-                Created with ❤️ by Atomist in San Francisco & Beyond
+                Created with ❤️ by Atomist in San Francisco & Beyond<br>
                 Copyright © 2019 Atomist. All Rights Reserved.
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row mb-5">
             <div class="col">
-              <nav>
-                <ul>
-                  <li><a href="terms.html">Terms</a></li>
+              <nav class="nav justify-content-center">
+                <ul class="nav">
+                  <li class="mr-4"><a href="terms.html">Terms</a></li>
                   <li><a href="privacy.html">Privacy</a></li>
                 </ul>
               </nav>
