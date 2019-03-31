@@ -232,18 +232,20 @@
             </div>
           </div>
 
-          <div class="row d-flex justify-content-start">
+          <div class="row d-flex flex-row flex-wrap">
 
-            <!-- div for image -->
-            <div class="col d-block">
-              <img src="http://placekitten.com/400/400" alt="">
-            </div>
+            <!-- div for image
+            <div class="float-left">
+              <img class="d-block" src="http://placekitten.com/400/400" alt="">
+            </div> -->
 
             <!-- div for bulletpoints, has 5 rows -->
+    <!--        <div class=float-right> -->
             <div class="col">
+              <img class="d-block float-left rounded-circle" src="http://placekitten.com/400/400" alt="">
 
               <!-- row 1 -->
-              <div class="row">
+      <!--        <div class="row"> -->
                 <div class="col point-blue">
                   <!-- The bullet point is the div, made with css -->
                 </div>
@@ -253,7 +255,7 @@
                     Atomist has a rich command framework for you to create custom commands that are available to everyone in chat or via command-line.
                     Commands can be attached to chat notifications so that users can take action right there – promote that staging deployment.</p>
                 </div>
-              </div>
+    <!--          </div> -->
 
               <!-- row 2 -->
               <div class="row">
@@ -299,8 +301,9 @@
                   receives events, and also integrates with those tools APIs to directly execute delivery stages.</p>
                 </div>
               </div>
-
             </div>
+
+        <!--    </div> -->
 
           </div>
 
