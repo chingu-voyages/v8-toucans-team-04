@@ -2,13 +2,25 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 70vh;
-}
-#atomist-logo{
-    left: 0;
+    height: 80%;
 }
 #img-goals{
     width: 90vh;
+}
+.nav-collapsed{
+    color: white;
+    font-size: 25px;
+    margin-top: 25px
+}
+#login-collapsed{
+    position: absolute;
+    bottom: 140px;
+    margin: 0;
+}
+#btn-start-collapsed{
+    position: absolute;
+    bottom: 50px;
+    margin: 0;
 }
 #git-push-border{
     border: 1px solid rgb(221,221,221);
@@ -23,6 +35,7 @@
 /*    border-radius: 5px;*/
     background-color: rgb(91,195,153);
     border: none;
+    padding:15px;
 }
 .btn-primary:hover{
     background-color: rgb(67,183,136);
@@ -49,6 +62,10 @@
     background-color: transparent;
     border-radius: 5px;
 }
+.btn-article:hover{
+    background-color: rgb(91,195,153);
+    color: white;
+}
 
 h5{
     
@@ -60,4 +77,15 @@ p{
 
 .bg-gray{
     background-color: rgb(247,247,247);
+}
+
+@media (min-width: 1200px){
+    #nav-button{
+        visibility: hidden;
+    }
+}
+@media (max-width: 1200px){
+        #nav-bar{
+        visibility: hidden;
+    }
 }
