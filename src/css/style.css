@@ -2,25 +2,13 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 80%;
+    height: 70vh;
+}
+#atomist-logo{
+    left: 0;
 }
 #img-goals{
     width: 90vh;
-}
-.nav-collapsed{
-    color: white;
-    font-size: 25px;
-    margin-top: 25px
-}
-#login-collapsed{
-    position: absolute;
-    bottom: 140px;
-    margin: 0;
-}
-#btn-start-collapsed{
-    position: absolute;
-    bottom: 50px;
-    margin: 0;
 }
 #git-push-border{
     border: 1px solid rgb(221,221,221);
@@ -35,7 +23,6 @@
 /*    border-radius: 5px;*/
     background-color: rgb(91,195,153);
     border: none;
-    padding:15px;
 }
 .btn-primary:hover{
     background-color: rgb(67,183,136);
@@ -53,7 +40,7 @@
 }
 .font-secondary{
     color: rgb(70,70,70);
-    font-family: "Tofino", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", sans-serif;    
+    font-family: "Tofino", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", sans-serif;
 }
 .btn-article{
     border: 2px solid;
@@ -62,30 +49,33 @@
     background-color: transparent;
     border-radius: 5px;
 }
-.btn-article:hover{
-    background-color: rgb(91,195,153);
-    color: white;
-}
 
 h5{
-    
+
 }
 
 p{
-    
+
 }
 
 .bg-gray{
     background-color: rgb(247,247,247);
 }
 
-@media (min-width: 1200px){
-    #nav-button{
-        visibility: hidden;
-    }
+.card-h{
+  height: 327px;
 }
-@media (max-width: 1200px){
-        #nav-bar{
-        visibility: hidden;
-    }
+
+.row-w{
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.point-blue{
+  border-radius: 10px;
+  background-color: #007BBD;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
 }
