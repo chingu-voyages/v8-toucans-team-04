@@ -100,10 +100,19 @@ p{
     }
 }
 
-.circle-img{
+
+@media (min-width: 1170px) {
+ .img-div{
   top: 150px;
   left: -100px;
+  position: absolute;
+} }
+
+.img-div{
   z-index: 100;
+}
+
+.circle-img{
   height: 500px;
   width: 500px;
 }
