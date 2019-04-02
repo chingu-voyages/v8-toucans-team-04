@@ -79,7 +79,6 @@ p{
     background-color: rgb(247,247,247);
 }
 
-<<<<<<< HEAD
 .point-blue{
   border-radius: 10px;
   background-color: #007BBD;
@@ -89,7 +88,7 @@ p{
   width: 15px;
   height: 15px;
 }
-=======
+
 @media (min-width: 1200px){
     #nav-button{
         visibility: hidden;
@@ -100,4 +99,3 @@ p{
         visibility: hidden;
     }
 }
->>>>>>> dev
