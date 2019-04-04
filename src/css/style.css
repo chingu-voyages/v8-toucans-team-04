@@ -127,6 +127,14 @@ p{
   background-image: url(../assets/CTA-banner-texture.jpg);
   color: white;
 }
+
+#footer nav ul li a, #footer {
+  color: gray;
+}
+
+#footer i {
+  color: rgb(34,127,126);
+}
 /* End of Carlo's section */
 
 
