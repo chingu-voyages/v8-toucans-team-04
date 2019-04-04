@@ -123,6 +123,25 @@ p{
 
 
 /* Carlo's section */
+#intro {
+  height: 60vh;
+}
+
+#intro {
+  color: white;
+}
+
+#intro h1 {
+  font-size: 300%;
+}
+
+#intro p {
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5em;
+  font-size: 160%;
+}
+
 #ready-to-try {
   background-image: url(../assets/CTA-banner-texture.jpg);
   color: white;
