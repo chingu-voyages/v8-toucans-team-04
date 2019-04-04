@@ -79,6 +79,16 @@ p{
     background-color: rgb(247,247,247);
 }
 
+.point-blue{
+  border-radius: 10px;
+  background-color: #007BBD;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
 @media (min-width: 1200px){
     #nav-button{
         visibility: hidden;
@@ -89,12 +99,34 @@ p{
         visibility: hidden;
     }
 }
-.point-blue{
-  border-radius: 10px;
-  background-color: #007BBD;
+
+
+@media (min-width: 1170px) {
+ .img-div{
+  top: 150px;
+  left: -100px;
   position: absolute;
-  top: 5px;
-  left: 0;
-  width: 15px;
-  height: 15px;
+} }
+
+.img-div{
+  z-index: 100;
 }
+
+.circle-img{
+  height: 500px;
+  width: 500px;
+}
+
+/* Brazill's section */
+
+/* End of Brazill's section */
+
+
+/* Carlo's section */
+
+/* End of Carlo's section */
+
+
+/* Sara's section */
+
+/* End of Sara's section */
