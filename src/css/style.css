@@ -1,8 +1,10 @@
+/* Brazill's section */
 #banner{
     position: absolute;
     display: block;
     width: 100%;
     height: 80%;
+    z-index: -50;
 }
 #atomist-logo{
     left:0;
@@ -71,6 +73,47 @@
     border-radius: 4px;
     padding: 2px 5px;
 }
+
+@media (min-width: 1200px){
+    #nav-button{
+        visibility: hidden;
+    }
+}
+@media (max-width: 1200px){
+        #nav-bar{
+        visibility: hidden;
+    }
+}
+
+/* Pricing Page */
+
+#title-pricing{
+    font-size:55px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+.plan-box{
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.pb-top{
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.pb-bottom{
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.btn-plan{
+    margin-top: 115px;
+}
+
+/* End of Brazill's section */
+
+/* General Styling */
+
 .btn-primary{
     font-size: 1rem;
     color: white;
@@ -90,7 +133,6 @@
     background-color: rgb(29,99,98);
 }
 .font-primary{
-/*    color: rgb(42,42,42);*/
     font-family: "Tofino", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", sans-serif;
 }
 .font-secondary{
@@ -124,6 +166,12 @@ p{
 .bg-gray{
     background-color: rgb(247,247,247);
 }
+.bg-dark-gray{
+    background-color: rgb(242,242,242);
+}
+.bg-white{
+    background-color: white;
+}
 
 .point-blue{
   border-radius: 10px;
@@ -134,18 +182,6 @@ p{
   width: 15px;
   height: 15px;
 }
-
-@media (min-width: 1200px){
-    #nav-button{
-        visibility: hidden;
-    }
-}
-@media (max-width: 1200px){
-        #nav-bar{
-        visibility: hidden;
-    }
-}
-
 
 @media (min-width: 1170px) {
  .img-div{
@@ -163,9 +199,6 @@ p{
   width: 500px;
 }
 
-/* Brazill's section */
-
-/* End of Brazill's section */
 
 
 /* Carlo's section */
