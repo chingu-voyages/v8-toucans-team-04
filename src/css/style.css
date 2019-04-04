@@ -123,7 +123,10 @@ p{
 
 
 /* Carlo's section */
-
+#ready-to-try {
+  background-image: url(../assets/CTA-banner-texture.jpg);
+  color: white;
+}
 /* End of Carlo's section */
 
 
