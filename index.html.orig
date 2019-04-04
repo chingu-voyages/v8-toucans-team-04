@@ -16,6 +16,7 @@
   <body>
 
 <!-- Collapsed Navigation -->
+<<<<<<< HEAD
       
 <div class="position-fixed" id="nav-side">
     <img id="banner-collapsed" src="src/assets/atomist_logo_shapes_banner-home.jpg" >
@@ -25,6 +26,17 @@
             <div class="nav-collapsed  row-1" >Pricing</div>
             <div class="nav-collapsed  row-1" >Docs</div>
             <div class="nav-collapsed  row-1" >Blog</div>
+=======
+
+<div class="position-fixed" style="width: 100%;height:100vh;z-index:20;visibility: collapse" id="nav-side">
+    <img src="src/assets/atomist_logo_shapes_banner-home.jpg" style="position:absolute;z-index:-10;left:-1500px;">
+    <img src="src/assets/Atomist-Logo-White-Horiz.png" style="width: 110px" class="m-3">
+    <div class="container h-100 ml-0 d-flex flex-column" style="z-index:10">
+            <div class="nav-collapsed  row-1" style="z-idex:20;">Developer</div>
+            <div class="nav-collapsed  row-1" style="z-idex:20;">Pricing</div>
+            <div class="nav-collapsed  row-1" style="z-idex:20;">Docs</div>
+            <div class="nav-collapsed  row-1" style="z-idex:20;">Blog</div>
+>>>>>>> origin
             <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
             <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = 'https://app.atomist.com/user/signup?_ga=2.246771340.948132213.1553277995-6570700.1552576324';" id="btn-start-collapsed" >Get Started</button>
     </div>
@@ -33,10 +45,34 @@
 <!-- Nav menu button -->
 <div id="nav-button-holder" class="row d-flex text-right position-fixed" >
     <div class="col-12 ml-0" onclick="toggleNav()" id="nav-button">☰</div>
+<<<<<<< HEAD
 </div>
 
 <!-- Logo & Banner -->
-     <img src="src/assets/atomist_logo_shapes_banner-home.jpg" id="banner">
+=======
+
+      <script>
+          let navVisible = false;
+          function toggleNav(){
+              let nav = document.getElementById("nav-side");
+              let navButton = document.getElementById("nav-button");
+              if (navVisible == false){
+                  console.log("nav on");
+                  nav.style.visibility = "visible";
+                  navButton.innerHTML = "×";
+                  navVisible = true;
+              }else if(navVisible = true){
+                  console.log("nav off")
+                  nav.style.visibility = "collapse";
+                  navButton.innerHTML ="☰";
+                  navVisible =false;
+              }
+          }
+    </script>
+</div>
+
+>>>>>>> origin
+      <img src="src/assets/atomist_logo_shapes_banner-home.jpg" id="banner">
 <div class="row">
       <div class="col-2 mt-4 position-absolute">
           <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5">
