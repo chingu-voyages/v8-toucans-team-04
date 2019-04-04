@@ -135,6 +135,10 @@ p{
 #footer i {
   color: rgb(34,127,126);
 }
+
+#footer {
+  background-color: rgb(250,250,250);
+}
 /* End of Carlo's section */
 
 
