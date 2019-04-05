@@ -100,6 +100,40 @@
     <!-- End of Atomist CLI section -->
 
     <!-- Atomist workspace section -->
+    <div class="row ml-5 mr-5 pl-5 pr-5" id="dev-workspace">
+      <div class="col">
+        <h2>Create an Atomist Workspace</h2>
+        <p>
+          A Workspace is where you configure which git repositories or organizations SDMs work on. 
+          It’s also where you connect a workspace to chat, and invite and manage other users of the 
+          workspace. You’ll need a workspace to connect your own SDM to.
+        </p>
+        <h6>Configure your CLI:</h6>
+        <pre>
+          <span class="dollar">$</span> atomist config <br>
+          ? Enter your api key from https://app.atomist.com/apikeys <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; or hit <ENTER> to select an authentication provider <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; to login with Atomist: <br>
+          Select one of the following authentication providers available to login with Atomist: <br>
+          ? Authentication Provider GitHub <br>
+          Logged in as roborate using GitHub <br>
+          No workspaces available. Run atomist workspace create <br>
+        </pre>
+        <h6>Create a Workspace:</h6>
+        <pre>
+          <span class="dollar">$</span> atomist workspace create <br>
+          Logged in as roborate using GitHub <br>
+          Create a new workspace: <br>
+          ? Workspace Name roborate <br>
+          Successfully created new workspace roborate with id ACJJMMMKO3 <br>
+          Select an SCM provider type to configure: <br>
+          ? SCM provider GitHub.com <br>
+          Please select organizations you want to enable: <br>
+          ? Organizations roborate-org <br>
+          Successfully configured SCM provider GitHub.com 
+        </pre>
+      </div>
+    </div>
     <!-- End of Atomist workspace section -->
 
     <!-- Delivery Machine section -->
