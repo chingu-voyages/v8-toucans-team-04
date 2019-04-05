@@ -93,10 +93,10 @@
     text-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
 .plan-box{
-    height: 300px;
-    border-radius: 10px;
+    height: 400px;
+    padding-bottom: 100px;
+    /* border-radius: 10px; */
     overflow: hidden;
-    
 }
 .pb-top{
 border-top-left-radius: 5px;
@@ -107,7 +107,13 @@ border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
 }
 .btn-plan{
-    margin-top: 115px;
+    margin-top: 75px;
+}
+.plan-label{
+    font-size: 25px;
+}
+.plan-price{
+    font-size: 35px;
 }
 
 /* End of Brazill's section */
