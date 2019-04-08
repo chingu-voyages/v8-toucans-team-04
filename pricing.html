@@ -45,7 +45,7 @@
       </div>
   </div>
 
-    <div class="container-fluid bg-primary">
+    <div class="container-fluid">
 
       <!-- Navigation bar section -->
 
@@ -60,32 +60,50 @@
         
         <!-- Body -->
         
-        <div class="container col-12 bg-success justify">
-            <div class="row d-flex bg-danger w-100 ">
-                <div class="col-md-8 offset-md-2">
-                    <h1 id="title-pricing" class="text-center mt-5">Self-Service Software Delivery for Developers, Teams, and Enterprises</h1>
+        <div class="container-fluid row justify no-gutters">
+            <div class="row d-flex w-100 ">
+                <!-- <div class="col-md-8 offset-md-2"> -->
+                    <h1 id="title-pricing" class="col-8 text-center mt-5 mx-auto">Self-Service Software Delivery for Developers, Teams, and Enterprises</h1>
                 </div>
         <!-- Plan Boxes -->
-                <div class="plan-box col-md-4 mx-auto mt-5 bg-success">
-                    <div class="bg-dark-gray pb-top">
+
+        <!-- Beta -->
+            <div class="col">
+                <div class="plan-box col-md-12 mt-5">
+                    <div class="container bg-dark-gray pb-top">
                       <div class="row">
                         <div class="col mt-3 ml-4 plan-label">Free (Beta)</div>
                       </div>  
                       <div class="row">
-                        <div class="col mb-4 ml-4">For Developers</div>
+                        <div class="col mb-4 ml-4 font-dark-gray">For Developers</div>
                       </div>  
                     </div>
-                    <div class="bg-white pb-bottom h-75 d-block justify-content-center">
+
+                    <div class="container bg-white pb-bottom d-flex flex-column h-75">
                       <div class="row">
-                        <div class="col ml-4 mt-3 m4-5"><span class="plan-price"><span class="dollar-sign">$</span>0</span><span class="font-dark-gray"> /month</span></span></div>
-                      </div>  
-                        <button class="btn btn-primary btn-plan w-75 h-25 btn-block mx-auto my-5">Get Started</button>
+                        <div class="col"><span class="plan-price"><span class="dollar-sign">$</span>0</span><span class="font-dark-gray"> /month</span></span>
+                        </div>
+                      </div>
+                      <div class="row w-100 h-100 mx-auto">
+                        <div class="col align-self-end">
+                          <button class="btn-plan btn btn-primary w-100 btn-block ">Get Started</button>
+                        </div>
+                      </div>
                     </div>
 
                 </div>
-                
-                <div class="plan-box col-md-4 mx-auto mt-5">
-                  <div class="bg-dark-gray pb-top">
+        <!-- Description -->
+                <div class="col-6">
+                  Works with GitHub.com Public & Private repositories<br>
+  1 workspace<br>
+  1 user<br>
+  Community chat access<br>
+                  </div>
+            </div>
+        <!-- Professional -->
+        <div class="col">
+                <div class="plan-box col-md-12 mx-auto mt-5">
+                  <div class="container bg-dark-gray pb-top">
                     <div class="row">
                       <div class="col mt-3 ml-4 plan-label">Professional</div>
                     </div>  
@@ -93,17 +111,35 @@
                       <div class="col mb-4 ml-4 font-dark-gray">For teams developing in the cloud</div>
                     </div>  
                   </div>
-                  <div class="bg-white pb-bottom h-75 d-block justify-content-center">
+                  <div class="container bg-white pb-bottom d-flex flex-column h-75">
                     <div class="row">
                       <div class="col ml-4"><span class="plan-price"><span class="dollar-sign">$</span>833</span><span class="font-dark-gray"> /month</span><br>
                         <span class="font-dark-gray">BILLED ANNUALLY</span></div>
                     </div>  
-                      <button class="btn btn-primary btn-plan w-75 h-25 btn-block mx-auto">Get Started</button>
+                    <div class="row w-100 h-100 mx-auto">
+                      <div class="col align-self-end">
+                        <button class="btn-plan btn btn-primary w-100 btn-block">Get Started</button>
+                      </div>
+                    </div>
                   </div>
               </div>
-
-              <div class="plan-box col-md-4 mx-auto mt-5">
-                <div class="bg-dark-gray pb-top">
+        <!-- Description -->
+                <div class="col-4">
+                  Everything in Free Plan<br>
+        First 10 users included<br>
+        Up to 10,000 events /month<br>
+        Support for both private and public repos<br>
+        Works with GitHub.com<br>
+        Access to Web Workspace, Slack Bot, and API<br>
+        Single sign-on via GitHub<br>
+        Community chat access<br>
+        Email and chat support<br>
+                  </div>
+        </div>
+        <!-- Enterprise -->
+        <div class="col">
+              <div class="plan-box col-md-12 mx-auto mt-5">
+                <div class="container bg-dark-gray pb-top">
                   <div class="row">
                     <div class="col mt-3 ml-4 plan-label">Enterprise</div>
                   </div>  
@@ -111,41 +147,27 @@
                     <div class="col mb-4 ml-4 font-dark-gray">For teams developing in the cloud</div>
                   </div>  
                 </div>
-                <div class="bg-white pb-bottom h-75 d-block justify-content-center">
+                <div class=" container bg-white pb-bottom d-flex flex-column h-75">
                   <div class="row">
                     <div class="col ml-4"><span class="plan-price">Contact Us<br>
                     </div>
-                  </div>  
-                    <button class="btn btn-article btn-plan w-75 h-25 btn-block mx-auto">Talk To Sales</button>
+                  </div> 
+                  <div class="row w-100 h-100 mx-auto">
+                      <div class="col align-self-end">
+                        <button class="btn btn-plan btn-article btn-primary w-100 btn-block">Talk To Sales</button>
+                      </div>
+                  </div>
                 </div>
             </div>
-        <!-- Plan Descriptions -->
-                <div class="col-4">
-                Works with GitHub.com Public & Private repositories<br>
-1 workspace<br>
-1 user<br>
-Community chat access<br>
-                </div>
-                <div class="col-4">
-                Everything in Free Plan<br>
-First 10 users included<br>
-Up to 10,000 events /month<br>
-Support for both private and public repos<br>
-Works with GitHub.com<br>
-Access to Web Workspace, Slack Bot, and API<br>
-Single sign-on via GitHub<br>
-Community chat access<br>
-Email and chat support<br>
-                </div>
+        <!-- Description -->
                 <div class="col-4">
                 Everything in Professional Plan<br>
 Git support for GitHub Enterprise and Bitbucket Server<br>
 SSO & Directory Integration Support<br>
 Priority Support<br>
                 </div>
-                
             </div>
-        
+        </div>
         </div>
         
         
