@@ -115,6 +115,14 @@ border-bottom-right-radius: 5px;
 .plan-price{
     font-size: 35px;
 }
+.font-dark-gray{
+    color: rgb(158,158,167);
+}
+.dollar-sign{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+}
 
 /* End of Brazill's section */
 
@@ -173,7 +181,7 @@ p{
     background-color: rgb(247,247,247);
 }
 .bg-dark-gray{
-    background-color: rgb(242,242,242);
+    background-color: rgb(232,232,232);
 }
 .bg-white{
     background-color: white;
