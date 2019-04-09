@@ -206,27 +206,46 @@ code {
 
 #contact-interface {
   width: 370px;
-  padding: 40px 20px;
-  background-color: rgb(91,195,153);
+  padding: 0;
   border-radius: 10px;
   position: fixed;
   top: 20px;
   right: 20px;
   max-height: 80vh;
   overflow-y: scroll;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+}
+
+#salute {
+  background-color: rgb(91,195,153);
   color: white;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 20px;
+  z-index: -1;
+  height: 210px;
+  margin-bottom: 240px;
+}
+
+#contact-interface .body {
+  margin-top: 130px;
 }
 
 #contact-interface .int-section {
   background-color: white;
   padding: 30px;
-  margin-top: 20px;
+  margin: 20px auto;
   color: gray;
   font-size: 0.8em;
   border-radius: 5px;
+  box-shadow: 3px 3px 5px silver;
+  width: 90%;
+  border-top: 1px solid rgb(91,195,153);
 }
 
-#contact-interface > img {
+#contact-interface #salute img {
   width: 30px;
 }
 
@@ -246,6 +265,32 @@ code {
   padding: 10px 20px;
   color: white;
   border-radius: 5px;
+}
+
+#contact-interface h5, #contact-interface h6{
+  color: black;
+  font-weight: normal;
+}
+
+#contact-interface h5 {
+  font-size: 120%;
+}
+
+#contact-interface h6 {
+  font-size: 100%;
+}
+
+#contact-interface .input-group-append {
+  cursor: pointer;
+}
+
+#contact-interface span.input-group-text {
+  color: white;
+  background-color: rgb(91,195,153);
+}
+
+#contact-interface input{
+  font-size: 100%;
 }
 /* End of Carlo's section */
 
