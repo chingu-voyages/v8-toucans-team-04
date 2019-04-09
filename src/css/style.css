@@ -204,8 +204,48 @@ code {
   border-radius: 50%;
 }
 
+#contact-interface {
+  width: 370px;
+  padding: 40px 20px;
+  background-color: rgb(91,195,153);
+  border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-height: 80vh;
+  overflow-y: scroll;
+  color: white;
+}
+
+#contact-interface .int-section {
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+  color: gray;
+  font-size: 0.8em;
+  border-radius: 5px;
+}
+
 #contact-interface > img {
   width: 30px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 60px;
+  margin-right: -10px;
+  display: inline;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+
+#contact-interface button {
+  width: 100%;
+  background-color: rgb(91,195,153);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
 }
 /* End of Carlo's section */
 
