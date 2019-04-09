@@ -154,9 +154,10 @@ p{
   background-color: rgb(250,250,250);
 }
 
-div.col {
+#intro > div.col, #dev-atomist-cli > div.col, #dev-workspace > div.col, #dev-delivery > div.col, #footer > div.col {
   max-width: 85%;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 pre {
