@@ -203,6 +203,10 @@ code {
   color: white;
   border-radius: 50%;
 }
+
+#contact-interface > img {
+  width: 30px;
+}
 /* End of Carlo's section */
 
 
