@@ -215,6 +215,7 @@ code {
   overflow-y: scroll;
   background-color: white;
   box-shadow: 5px 5px 5px gray;
+  visibility: hidden;
 }
 
 #salute {
