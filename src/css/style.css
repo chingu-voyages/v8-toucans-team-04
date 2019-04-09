@@ -191,6 +191,18 @@ code {
   color: rgb(55, 185, 146);
   padding: 0;
 }
+
+#contact-button {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(91,195,153);
+  border: none;
+  color: white;
+  border-radius: 50%;
+}
 /* End of Carlo's section */
 
 
