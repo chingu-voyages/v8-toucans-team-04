@@ -32,25 +32,6 @@
 <!-- Nav menu button -->
 <div class="row d-flex text-right position-fixed" style="font-size:30px;color:white;width:100%;z-index:50">
     <div class="col-12 ml-0" onclick="toggleNav()" id="nav-button">☰</div>
-
-      <script>
-          let navVisible = false;
-          function toggleNav(){
-              let nav = document.getElementById("nav-side");
-              let navButton = document.getElementById("nav-button");
-              if (navVisible == false){
-                  console.log("nav on");
-                  nav.style.visibility = "visible";
-                  navButton.innerHTML = "×";
-                  navVisible = true;
-              }else if(navVisible = true){
-                  console.log("nav off")
-                  nav.style.visibility = "collapse";
-                  navButton.innerHTML ="☰";
-                  navVisible =false;
-              }
-          }
-    </script>
 </div>
 
       <img src="src/assets/atomist_logo_shapes_banner-home.jpg" id="banner">
