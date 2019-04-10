@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Atomist | Software delivery information for cloud-native applications</title>
+  </head>
+  <body>
+
+<!-- Collapsed Navigation -->
+
+<div class="position-fixed" style="width: 100%;height:100vh;z-index:20;visibility: collapse" id="nav-side">
+    <img src="src/assets/atomist_logo_shapes_banner-home.jpg" style="position:absolute;z-index:-10;left:-1500px;">
+    <img src="src/assets/Atomist-Logo-White-Horiz.png" style="width: 110px" class="m-3">
+    <div class="container h-100 ml-0 d-flex flex-column" style="z-index:10">
+            <div class="nav-collapsed  row-1" style="z-idex:20;">Developer</div>
+            <div class="nav-collapsed  row-1" style="z-idex:20;">Pricing</div>
+            <div class="nav-collapsed  row-1" style="z-idex:20;">Docs</div>
+            <div class="nav-collapsed  row-1" style="z-idex:20;">Blog</div>
+            <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
+            <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = 'https://app.atomist.com/user/signup?_ga=2.246771340.948132213.1553277995-6570700.1552576324';" id="btn-start-collapsed" >Get Started</button>
+    </div>
+</div>
+
+<!-- Nav menu button -->
+<div class="row d-flex text-right position-fixed" style="font-size:30px;color:white;width:100%;z-index:50">
+    <div class="col-12 ml-0" onclick="toggleNav()" id="nav-button">☰</div>
+
+      <script>
+          let navVisible = false;
+          function toggleNav(){
+              let nav = document.getElementById("nav-side");
+              let navButton = document.getElementById("nav-button");
+              if (navVisible == false){
+                  console.log("nav on");
+                  nav.style.visibility = "visible";
+                  navButton.innerHTML = "×";
+                  navVisible = true;
+              }else if(navVisible = true){
+                  console.log("nav off")
+                  nav.style.visibility = "collapse";
+                  navButton.innerHTML ="☰";
+                  navVisible =false;
+              }
+          }
+    </script>
+</div>
+
+      <img src="src/assets/atomist_logo_shapes_banner-home.jpg" id="banner">
+<div class="row">
+  <div class="col-2 mt-4 position-absolute">
+    <img src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5" style="left:0; width: 200px;">
+  </div>
+</div>
+
+  <div class="container-fluid">
+
+      <!-- Navigation bar section -->
+
+    <div class="row d-flex flex-row justify-content-center mt-5 mr-1 position-relative" style="color:white;bottom:10px;" id="nav-bar">
+        <a class="nav-items col-1 offset-md-4 mt-1" href="https://atomist.com/developer.html" style="color:inherit">Developer</a>
+        <a href="https://atomist.com/pricing.html" class="nav-items col-1 mt-1" style="color:inherit">Pricing</a>
+        <a href="https://docs.atomist.com/?_ga=2.174237226.948132213.1553277995-6570700.1552576324" class="nav-items col-1 mt-1" style="color:inherit">Docs</a>
+        <a href="https://blog.atomist.com/?_ga=2.174237226.948132213.1553277995-6570700.1552576324" class="nav-items col-1 mt-1" style="color:inherit" style="color:inherit">Blog</a>
+        <a href="https://app.atomist.com/user/login?_ga=2.246771340.948132213.1553277995-6570700.1552576324" class="col-1 text-right offset-md-2 mt-1 " style="color:inherit">Log in</a>
+        <button class="col-1 text-nowrap btn btn-primary btn-lg" onclick="window.location.href = 'https://app.atomist.com/user/signup?_ga=2.246771340.948132213.1553277995-6570700.1552576324';" style="box-shadow:0 5px 15px rgba(0,0,0,.3)" >Get Started</button>
+    </div>
+
+    <!-- Intro section -->
+    <div class="row mt-5 mb-5 d-flex" id="intro">
+      <div class="container col-12">
+        <h1 class="text-center mt-5">Getting Started</h1>
+        <p class="pr-5 pl-5 ml-5 mr-5 text-center">
+          Atomist is a programmable platform for event-driven automation of software delivery, with native
+          chatops support. Developing on Atomist means building on a Software Delivery Machine, so let’s 
+          get started creating one!
+        </p>
+      </div>
+    </div>
+    <!-- End of Intro section -->
+
+    <!-- Atomist CLI section -->
+    <div class="row p-5" id="dev-atomist-cli">
+      <div class="col">
+        <h2>Install the Atomist Command-Line Interface</h2>
+        <p>You’ll need Git and Node.js (this comes with npm) installed</p>
+        <pre><span class="dollar">$</span> npm install -g @atomist/cli</pre>
+        <p>Or on a mac, if you prefer homebrew:</p>
+        <pre><span class="dollar">$</span> brew install atomist-cli</pre>
+        <p>Now you have the <code>atomist</code> command installed which is used for creating and running an SDM.</p>
+      </div>
+    </div>
+    <!-- End of Atomist CLI section -->
+
+    <!-- Atomist workspace section -->
+    <div class="row mt-5 p-5" id="dev-workspace">
+      <div class="col">
+        <h2>Create an Atomist Workspace</h2>
+        <p>
+          A Workspace is where you configure which git repositories or organizations SDMs work on. 
+          It’s also where you connect a workspace to chat, and invite and manage other users of the 
+          workspace. You’ll need a workspace to connect your own SDM to.
+        </p>
+        <h6 class="mt-4 mb-3">Configure your CLI:</h6>
+        <pre>
+          <span class="dollar">$</span> atomist config <br>
+          ? Enter your api key from https://app.atomist.com/apikeys <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; or hit <ENTER> to select an authentication provider <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; to login with Atomist: <br>
+          Select one of the following authentication providers available to login with Atomist: <br>
+          ? Authentication Provider GitHub <br>
+          Logged in as roborate using GitHub <br>
+          No workspaces available. Run atomist workspace create <br>
+        </pre>
+        <h6 class="mt-4 mb-3">Create a Workspace:</h6>
+        <pre>
+          <span class="dollar">$</span> atomist workspace create <br>
+          Logged in as roborate using GitHub <br>
+          Create a new workspace: <br>
+          ? Workspace Name roborate <br>
+          Successfully created new workspace roborate with id ACJJMMMKO3 <br>
+          Select an SCM provider type to configure: <br>
+          ? SCM provider GitHub.com <br>
+          Please select organizations you want to enable: <br>
+          ? Organizations roborate-org <br>
+          Successfully configured SCM provider GitHub.com 
+        </pre>
+      </div>
+    </div>
+    <!-- End of Atomist workspace section -->
+
+    <!-- Delivery Machine section -->
+    <div class="row mt-5 mb-5 p-5" id = "dev-delivery">
+      <div class="col">
+        <h2 class="mb-4">Create a Software Delivery Machine</h2>
+        <pre>
+          <span class="dollar">$</span> atomist create sdm <br>
+          ? Type of SDM to create <br>
+          &nbsp; blank <br>
+          ❯ uhura <br>
+          ... <br>
+          &nbsp; Successfully created new project uhura at file:~/atomist/projects/target-owner/uhura <br>
+          <span class="dollar">$</span> cd  ~/atomist/projects/target-owner/uhura <br>
+          <span class="dollar">$</span> atomist start <br>
+        </pre>
+        <p>
+          When it prompts you for <code>(mapped parameter) target-owner</code>, enter your GitHub organization 
+          (or your GitHub username). A new directory will be created for the SDM in 
+          <code>$ATOMIST_ROOT/&lt;target-owner&gt;/&lt;target repository&gt;</code>. 
+          This will not create a repository on GitHub.
+        </p>
+        <p>
+          Running <code>atomist start</code> will install (<code>npm install</code>) and start the Uhura SDM. Uhura provides 
+          the same delivery goals that are provided to every workspace by the Atomist service. 
+          By installing your own instance of Uhura, you can extend and customize its behavior.
+        </p>
+        <p class="mb-5">
+          When the Uhura SDM starts up, it will connect to your Atomist workspace. 
+          Test it out by creating a new project and see the delivery goals execute.
+        </p>
+        <span class="link">
+          Next: <a class="nav-link" href="https://docs.atomist.com/developer/?_ga=2.106521216.242358264.1554336887-1714051839.1552404641">
+            See Tutorials to start developing your SDM
+          </a>
+        </span>
+        
+      </div>
+    </div>
+    <!-- End of Delivery Machine section -->
+
+    <!-- Footer section -->
+    <div class="row text-center mt-1 pt-5" id="footer">
+      <div class="col">
+        <div class="row mb-4">
+          <div class="col">
+            <img src="src/assets/Atomist-Mark-Color.png" alt="" style="width: 50px">
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col">
+            <nav class="nav justify-content-center">
+              <ul class="nav flex-column text-right">
+                <li class="mb-3"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="mb-3"><a class="nav-link disabled" href="">Product</a></li>
+                <li class="mb-3"><a class="nav-link" href="developer.html">Developers</a></li>
+              </ul>
+              <ul class="nav flex-column ml-5 mr-5">
+                <li class="mb-3"><a class="nav-link" href="about.html">About</a></li>
+                <li class="mb-3"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="mb-3"><a class="nav-link" href="">Contact</a></li>
+                <li class="mb-3"><a class="nav-link" href="https://github.com/atomist?_ga=2.189617570.829129499.1553291524-1714051839.1552404641">Open Source</a></li>
+              </ul>
+              <ul class="nav flex-column text-left">
+                <li class="mb-3"><a class="nav-link" href="https://blog.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Blog</a></li>
+                <li class="mb-3"><a class="nav-link" href="https://docs.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Docs</a></li>
+                <li class="mb-3"><a class="nav-link" href="resources.html">Resources</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">
+            <nav class="nav justify-content-center">
+                <ul class="nav">
+                  <li><a href="https://twitter.com/atomist?_ga=2.201162279.829129499.1553291524-1714051839.1552404641"><i class="fab fa-twitter fa-2x"></i></a></li>
+                  <li class="ml-5"><a href="https://github.com/atomist?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-github fa-2x"></i></a></li>
+                  <li class="mr-5 ml-5"><a href="https://join.atomist.com/?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-slack fa-2x"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCvKTtZtPh_MHkQJuAgvzKOA?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-youtube fa-2x"></i></a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col">
+            <p>
+              Created with ❤️ by Atomist in San Francisco & Beyond<br>
+              Copyright © 2019 Atomist. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">
+            <nav class="nav justify-content-center">
+              <ul class="nav">
+                <li class="mr-4"><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of footer section -->
+
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
