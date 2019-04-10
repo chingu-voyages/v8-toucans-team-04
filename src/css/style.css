@@ -194,14 +194,24 @@ p{
     background-color: white;
 }
 
-.point-blue{
+.point{
   border-radius: 10px;
-  background-color: #007BBD;
   position: absolute;
   top: 5px;
   left: 0;
   width: 15px;
   height: 15px;
+}
+
+@media (min-width: 1200px){
+    #nav-button{
+        visibility: hidden;
+    }
+}
+@media (max-width: 1200px){
+        #nav-bar{
+        visibility: hidden;
+    }
 }
 
 @media (min-width: 1170px) {
@@ -212,7 +222,10 @@ p{
 } }
 
 .img-div{
+  margin-bottom: 30px;
+  position: relative;
   z-index: 100;
+  text-align: center;
 }
 
 .circle-img{
@@ -223,10 +236,283 @@ p{
 
 
 /* Carlo's section */
+#intro {
+  height: 60vh;
+  color: white;
+}
 
+#intro h1 {
+  font-size: 300%;
+}
+
+#intro p {
+  line-height: 1.5em;
+  font-size: 160%;
+}
+
+#ready-to-try {
+  background-image: url(../assets/CTA-banner-texture.jpg);
+  color: white;
+}
+
+#footer nav ul li a, #footer {
+  color: gray;
+}
+
+#footer i {
+  color: rgb(34,127,126);
+}
+
+#footer, #dev-workspace {
+  background-color: rgb(250,250,250);
+}
+
+#intro > div.col, #dev-atomist-cli > div.col, #dev-workspace > div.col, #dev-delivery > div.col, #footer > div.col {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+pre {
+  background-color: rgb(13, 11, 26);
+  color: rgb(220,220,220);
+  padding: 20px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 2em;
+  white-space: normal;
+}
+
+pre .dollar {
+  color: green;
+}
+
+code {
+  border: 1px solid silver;
+  border-radius: 5px;
+  color: green;
+  padding: 2px 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.link {
+  border: 1px solid silver;
+  padding: 10px 20px;
+}
+
+.link a {
+  display: inline;
+  color: rgb(55, 185, 146);
+  padding: 0;
+}
+
+#contact-button {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(91,195,153);
+  border: none;
+  color: white;
+  border-radius: 50%;
+}
+
+#contact-interface {
+  width: 370px;
+  padding: 0;
+  border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-height: 80vh;
+  overflow-y: scroll;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  visibility: hidden;
+}
+
+#salute {
+  background-color: rgb(91,195,153);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 20px;
+  z-index: -1;
+  height: 210px;
+  margin-bottom: 240px;
+}
+
+#contact-interface .body {
+  margin-top: 130px;
+}
+
+#contact-interface .int-section {
+  background-color: white;
+  padding: 30px;
+  margin: 20px auto;
+  color: gray;
+  font-size: 0.8em;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px silver;
+  width: 90%;
+  border-top: 1px solid rgb(91,195,153);
+}
+
+#contact-interface #salute img {
+  width: 30px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 60px;
+  margin-right: -10px;
+  display: inline;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+
+#contact-interface button {
+  width: 100%;
+  background-color: rgb(91,195,153);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+#contact-interface h5, #contact-interface h6{
+  color: black;
+  font-weight: normal;
+}
+
+#contact-interface h5 {
+  font-size: 120%;
+}
+
+#contact-interface h6 {
+  font-size: 100%;
+}
+
+#contact-interface .input-group-append {
+  cursor: pointer;
+}
+
+#contact-interface span.input-group-text {
+  color: white;
+  background-color: rgb(91,195,153);
+}
+
+#contact-interface input{
+  font-size: 100%;
+}
 /* End of Carlo's section */
 
 
 /* Sara's section */
+
+@media (min-width: 1025px) {
+ .img-div{
+   position: absolute;
+   top: 180px;
+   left: -100px;
+} }
+
+
+@media (min-width: 1170px) {
+.sd-p {
+    padding: 40px 45px 60px 45px;
+  }
+}
+
+@media (min-width: 770px) {
+.sd-m {
+    margin-left: 8.333333333333332%;
+  }
+}
+
+@media (min-width: 770px) {
+.sd-w {
+    width: 83.33333333333334%;
+  }
+}
+
+@media (min-width: 770px) {
+.sd-section {
+  display: inline-block;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  }
+}
+
+.sdm-diagram {
+    margin-bottom: 40px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.sd-h5 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.command-interface {
+    margin-bottom: 60px;
+}
+
+@media (min-width: 1170px) {
+ .chatops {
+    margin-bottom: 80px;
+    margin-left: 250px;
+  }
+}
+
+@media (min-width: 1170px) {
+ .event-hub {
+    margin-bottom: 80px;
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 1170px) {
+ .cortex {
+    margin-bottom: 40px;
+    margin-left: 250px;
+  }
+}
+
+.integration {
+  margin-bottom: 0;
+}
+
+.bg-blue{
+  background-color: #007BBD;
+}
+
+.bg-teal{
+  background-color: #5BBCC3;
+}
+
+.bg-green{
+  background-color: #C6DD72;
+}
+
+.bg-darkgreen {
+  background-color: #227F7E;
+}
+
+.bg-darkblue {
+  background-color: #1B2937;
+}
+
+.sd-content {
+  color: #717274;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+}
 
 /* End of Sara's section */
