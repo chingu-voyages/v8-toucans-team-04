@@ -79,9 +79,8 @@ p{
     background-color: rgb(247,247,247);
 }
 
-.point-blue{
+.point{
   border-radius: 10px;
-  background-color: #007BBD;
   position: absolute;
   top: 5px;
   left: 0;
@@ -100,7 +99,6 @@ p{
     }
 }
 
-
 @media (min-width: 1170px) {
  .img-div{
   top: 150px;
@@ -109,7 +107,10 @@ p{
 } }
 
 .img-div{
+  margin-bottom: 30px;
+  position: relative;
   z-index: 100;
+  text-align: center;
 }
 
 .circle-img{
@@ -297,5 +298,109 @@ code {
 
 
 /* Sara's section */
+
+@media (min-width: 1025px) {
+ .img-div{
+   position: absolute;
+   top: 180px;
+   left: -100px;
+} }
+
+
+@media (min-width: 1170px) {
+.sd-p {
+    padding: 40px 45px 60px 45px;
+  }
+}
+
+@media (min-width: 770px) {
+.sd-m {
+    margin-left: 8.333333333333332%;
+  }
+}
+
+@media (min-width: 770px) {
+.sd-w {
+    width: 83.33333333333334%;
+  }
+}
+
+@media (min-width: 770px) {
+.sd-section {
+  display: inline-block;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  }
+}
+
+.sdm-diagram {
+    margin-bottom: 40px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.sd-h5 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.command-interface {
+    margin-bottom: 60px;
+}
+
+@media (min-width: 1170px) {
+ .chatops {
+    margin-bottom: 80px;
+    margin-left: 250px;
+  }
+}
+
+@media (min-width: 1170px) {
+ .event-hub {
+    margin-bottom: 80px;
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 1170px) {
+ .cortex {
+    margin-bottom: 40px;
+    margin-left: 250px;
+  }
+}
+
+.integration {
+  margin-bottom: 0;
+}
+
+.bg-blue{
+  background-color: #007BBD;
+}
+
+.bg-teal{
+  background-color: #5BBCC3;
+}
+
+.bg-green{
+  background-color: #C6DD72;
+}
+
+.bg-darkgreen {
+  background-color: #227F7E;
+}
+
+.bg-darkblue {
+  background-color: #1B2937;
+}
+
+.sd-content {
+  color: #717274;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+}
 
 /* End of Sara's section */
