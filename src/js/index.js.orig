@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let navVisible = false;
 function toggleNav(){
     let nav = document.getElementById("nav-side");
@@ -14,7 +15,7 @@ function toggleNav(){
         navVisible =false;
     }
 };
-
+=======
 var contactVisible = false
 
 document.querySelector("#contact-button").addEventListener('click', function() {
@@ -31,3 +32,4 @@ document.querySelector("#contact-button").addEventListener('click', function() {
 
   contactVisible = !contactVisible
 })
+>>>>>>> dev
