@@ -203,6 +203,8 @@ p{
   height: 15px;
 }
 
+<<<<<<< HEAD
+=======
 @media (min-width: 1200px){
     #nav-button{
         visibility: hidden;
@@ -214,6 +216,7 @@ p{
     }
 }
 
+>>>>>>> dev
 @media (min-width: 1170px) {
  .img-div{
   top: 150px;
