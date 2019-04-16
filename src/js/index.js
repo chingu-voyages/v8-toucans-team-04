@@ -17,17 +17,21 @@ function toggleNav(){
 
 var contactVisible = false
 
-document.querySelector("#contact-button").addEventListener('click', function() {
+document.querySelector("#contact-button").addEventListener('click', showInterface)
+document.querySelector(".js-contact").addEventListener('click', showInterface)
+
+function showInterface() {
   var divInterface = document.querySelector("#contact-interface")
+  var btnContact = document.querySelector("#contact-button")
 
   if (contactVisible) {
     divInterface.style.visibility = "hidden"
-    this.innerHTML = '<i class="fas fa-comment-alt fa-2x"></i>'
+    btnContact.innerHTML = '<i class="fas fa-comment-alt fa-2x"></i>'
   } 
   else {
     divInterface.style.visibility = "visible"
-    this.innerHTML = '<i class="fas fa-times fa-2x"></i>'
+    btnContact.innerHTML = '<i class="fas fa-times fa-2x"></i>'
   } 
 
   contactVisible = !contactVisible
-})
+}
