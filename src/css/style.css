@@ -569,5 +569,29 @@ code {
   }
 }
 
+.btn-darkgreen, .btn-darkgreen:hover {
+  background-color: #227F7E;
+  color: white;
+}
+
+.card-subtitle {
+    color: #9E9EA7;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+  /*  margin-bottom: 20px; */
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 770px) {
+.card-responsive {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px
+}
+}
 
 /* End of Sara's section */
