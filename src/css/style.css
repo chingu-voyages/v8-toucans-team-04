@@ -543,10 +543,10 @@ code {
   }
 }
 
-@media (min-width: 630px) {
+@media (max-width: 630px) {
 .card-icon {
   text-align: center;
-  width: 100%;
+  width: 100px;
 }
 }
 
@@ -561,7 +561,12 @@ code {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  text-align: center;
+}
+
+@media (min-width: 1000px) {
+.card-content {
+  padding: 40px 40px 40px 0;
+  }
 }
 
 
