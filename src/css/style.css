@@ -406,6 +406,10 @@ code {
 #contact-interface input{
   font-size: 100%;
 }
+
+.carousel-caption h5 {
+  color: black;
+}
 /* End of Carlo's section */
 
 
