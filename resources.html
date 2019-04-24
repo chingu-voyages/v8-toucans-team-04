@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Atomist | Software delivery information for cloud-native applications</title>
+  </head>
+
+  <body class="font-primary">
+
+    <!-- Collapsed Navigation -->    
+    <div class="position-fixed" id="nav-side">
+      <img id="banner-collapsed" src="src/assets/atomist_logo_shapes_banner-home.jpg" >
+      <img id="logo-collapsed" src="src/assets/Atomist-Logo-White-Horiz.png" class="m-3">
+      <div id="nav-collapsed-container" class="container h-100 ml-0 d-flex flex-column">
+        <div class="nav-collapsed  row-1" >Developer</div>
+        <div class="nav-collapsed  row-1" >Pricing</div>
+        <div class="nav-collapsed  row-1" >Docs</div>
+        <div class="nav-collapsed  row-1" >Blog</div>
+        <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
+        <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" id="btn-start-collapsed" >Get Started</button>
+      </div>
+    </div>
+
+    <!-- Nav menu button -->
+    <div id="nav-button-holder" class="row d-flex text-right position-fixed" >
+        <div class="col-12 ml-0" onclick="toggleNav()" id="nav-button">☰</div>
+    </div>
+
+    <!-- Logo & Banner -->
+    <img src="src/assets/atomist_logo_shapes_banner-home.jpg" id="banner">
+    <div class="row">
+      <div class="col-2 mt-4 position-absolute">
+        <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5">
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <!-- Navigation bar section -->
+      <div class="row d-flex flex-row justify-content-center mt-5 mr-1 position-relative"id="nav-bar">
+          <a class="nav-items col-1 offset-md-4 mt-1" href="developer.html">Developer</a>
+          <a href="pricing.html" class="nav-items col-1 mt-1">Pricing</a>
+          <a href="#" class="nav-items col-1 mt-1">Docs</a>
+          <a href="#" class="nav-items col-1 mt-1">Blog</a>
+          <a href="#" class="nav-items col-1 text-right offset-md-2 mt-1">Log in</a>
+          <button id="get-started-top" class="col-1 text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" >Get Started</button>
+      </div>
+
+      <!-- Intro section -->
+      <div class="row mt-5 d-flex">
+        <div class="container col-12">
+          <h1 class="text-center my-5 pb-5 text-light">We want to remove every last 
+            bit of unnecessary work that gets between you and shipping great software
+          </h1>
+        </div>
+      </div>
+      <!-- End of Intro section -->
+
+      <!-- Footer section -->
+      <div class="row text-center pt-5" id="footer">
+        <div class="col">
+          <div class="row mb-4">
+            <div class="col">
+              <img src="src/assets/Atomist-Mark-Color.png" alt="" style="width: 50px">
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <nav class="nav justify-content-center">
+                <ul class="nav flex-column text-right">
+                  <li class="mb-3"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                  <li class="mb-3"><a class="nav-link disabled" href="#">Product</a></li>
+                  <li class="mb-3"><a class="nav-link" href="developer.html">Developers</a></li>
+                </ul>
+                <ul class="nav flex-column ml-5 mr-5">
+                  <li class="mb-3"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="mb-3"><a class="nav-link" href="careers.html">Careers</a></li>
+                  <li class="mb-3"><a class="nav-link js-contact">Contact</a></li>
+                  <li class="mb-3"><a class="nav-link" target='_blank' href="https://github.com/atomist?_ga=2.189617570.829129499.1553291524-1714051839.1552404641">Open Source</a></li>
+                </ul>
+                <ul class="nav flex-column text-left">
+                  <li class="mb-3"><a class="nav-link" target='_blank' href="https://blog.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Blog</a></li>
+                  <li class="mb-3"><a class="nav-link" target='_blank' href="https://docs.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Docs</a></li>
+                  <li class="mb-3"><a class="nav-link" href="resources.html">Resources</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col">
+              <nav class="nav justify-content-center">
+                  <ul class="nav">
+                    <li><a target='_blank' href="https://twitter.com/atomist?_ga=2.201162279.829129499.1553291524-1714051839.1552404641"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li class="ml-5"><a target='_blank' href="https://github.com/atomist?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-github fa-2x"></i></a></li>
+                    <li class="mr-5 ml-5"><a target='_blank' href="https://join.atomist.com/?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-slack fa-2x"></i></a></li>
+                    <li><a target='_blank' href="https://www.youtube.com/channel/UCvKTtZtPh_MHkQJuAgvzKOA?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-youtube fa-2x"></i></a></li>
+                  </ul>
+                </nav>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <p>
+                Created with ❤️ by Atomist in San Francisco & Beyond<br>
+                Copyright © 2019 Atomist. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col">
+              <nav class="nav justify-content-center">
+                <ul class="nav">
+                  <li class="mr-4"><a href="terms.html">Terms</a></li>
+                  <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of footer section -->
+
+      <!-- Contact button-->
+      <button id="contact-button">
+        <i class="fas fa-comment-alt fa-2x"></i>
+      </button>
+      <!-- End of Contact button-->
+
+      <!-- Interface window-->
+      <div id="contact-interface">
+        <div id="salute">
+          <img class="ml-4" src="src/assets/Atomist-Mark-Color.png" alt="">
+          <h2 class="pt-3 ml-4">Hi there 👋</h2>
+        </div>
+        <div class="body">
+          <div class="int-section">
+            <h5>Start a conversation</h5>
+            <p>The team will reply as soon as they can</p>
+            <img src="src/assets/dd_avatar-badged-1513347161.png" alt="David" class="avatar" title="David">
+            <img src="src/assets/cd_avatar-1513326172.png" alt="Christian" class="avatar" title="Christian">
+            <br>
+            <button><i class="fas fa-paper-plane"></i> New conversation</button>
+          </div>
+          <div class="int-section">
+            <h5>Get a demo</h5>
+            <p>Interested in evaluating Atomist? Request a demo meeting with us</p>
+            <button>Request a demo</button>
+          </div>
+          <div class="int-section">
+            <h6>Find an answer yourself</h6>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for articles...">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="int-section">
+            <h5>Stay in the know. Subscribe to our list.</h5>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="name@example.com">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Interface window-->
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
