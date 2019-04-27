@@ -194,15 +194,6 @@ p{
     background-color: white;
 }
 
-.point{
-  border-radius: 10px;
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 15px;
-  height: 15px;
-}
-
 @media (min-width: 1200px){
     #nav-button{
         visibility: hidden;
@@ -213,26 +204,6 @@ p{
         visibility: hidden;
     }
 }
-
-@media (min-width: 1170px) {
- .img-div{
-  top: 150px;
-  left: -100px;
-  position: absolute;
-} }
-
-.img-div{
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 100;
-  text-align: center;
-}
-
-.circle-img{
-  height: 500px;
-  width: 500px;
-}
-
 
 
 /* Carlo's section */
@@ -414,6 +385,35 @@ code {
 
 
 /* Sara's section */
+.point{
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
+
+@media (min-width: 1170px) {
+ .img-div{
+  top: 150px;
+  left: -100px;
+  position: absolute;
+} }
+
+.img-div{
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+}
+
+.circle-img{
+  height: 500px;
+  width: 500px;
+}
+
 
 @media (min-width: 1025px) {
  .img-div{
@@ -489,6 +489,20 @@ code {
   }
 }
 
+@media (max-width: 500px) {
+ .circle-img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 360px) {
+ .circle-img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
 .integration {
   margin-bottom: 0;
 }
@@ -519,6 +533,94 @@ code {
   line-height: 1.5rem;
 }
 
+.card-h{
+  height: auto;
+}
+
+.row-w{
+  padding: 0 7% 0 7%;
+}
+
+
+.card-icon {
+  width: 160px;
+}
+
+.div-icon {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .div-icon {
+    flex: none;
+    height: 145px;
+    width: 160px;
+  }
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+.card-item {
+  flex-direction: row;
+  text-align: left;
+}
+}
+
+.card-content {
+  line-height: 1.875rem;
+  padding: 0 40px 20px 40px;
+}
+
+.card-content p {
+  color: #717274;
+}
+
+.card-item h5 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card-item a {
+  color: #5bc399;
+}
+
+@media (min-width: 1000px) {
+.card-content {
+  padding: 40px 40px 40px 0;
+  }
+}
+
+.btn-darkgreen, .btn-darkgreen:hover {
+  background-color: #227F7E;
+  color: white;
+}
+
+.card-subtitle {
+    color: #9E9EA7;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+  /*  margin-bottom: 20px; */
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 770px) {
+.card-responsive {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
 .carousel-control-prev-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
@@ -538,5 +640,4 @@ code {
 .carousel-pleft {
   margin-left: 150px;
 }
-
 /* End of Sara's section */
