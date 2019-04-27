@@ -619,15 +619,35 @@ code {
   width: 50%;
   padding-right: 15px;
   padding-left: 15px
+  }
 }
 
-.carousel-control-prev-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+.carousel-control-prev-icon  {
+  padding-left: 0;
 }
+
+.carousel-left {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+@media (min-width: 1000px) {
+  .carousel-left {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
+
 
 .carousel-indicators li {
   background-color: #999;
@@ -635,9 +655,15 @@ code {
   border-radius: 50%;
   width: 7px;
   height: 7px;
+  margin-right: 3%;
 }
 
-.carousel-pleft {
-  margin-left: 150px;
-}
+
 /* End of Sara's section */
+
+/* Makes div visibles, useful to fix mistakes */
+/*
+div {
+    border: 1px solid #000000;
+}
+*/
