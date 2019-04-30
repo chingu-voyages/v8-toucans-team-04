@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="src/js/index.js"></script>
-
     <title>Atomist | Software delivery information for cloud-native applications</title>
   </head>
   <body class="font-primary">
 
 <!-- Collapsed Navigation -->
-      
+
 <div class="position-fixed" id="nav-side">
     <img id="banner-collapsed" src="src/assets/atomist_logo_shapes_banner-home.jpg" >
     <img id="logo-collapsed" src="src/assets/Atomist-Logo-White-Horiz.png" class="m-3">
@@ -26,7 +24,7 @@
             <div class="nav-collapsed  row-1" >Docs</div>
             <div class="nav-collapsed  row-1" >Blog</div>
             <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
-            <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = 'https://app.atomist.com/user/signup?_ga=2.246771340.948132213.1553277995-6570700.1552576324';" id="btn-start-collapsed" >Get Started</button>
+            <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" id="btn-start-collapsed" >Get Started</button>
     </div>
 </div>
 
@@ -48,12 +46,12 @@
       <!-- Navigation bar section -->
 
     <div class="row d-flex flex-row justify-content-center mt-5 mr-1 position-relative"id="nav-bar">
-        <a class="nav-items col-1 offset-md-4 mt-1" href="https://atomist.com/developer.html">Developer</a>
-        <a href="https://atomist.com/pricing.html" class="nav-items col-1 mt-1">Pricing</a>
-        <a href="https://docs.atomist.com/?_ga=2.174237226.948132213.1553277995-6570700.1552576324" class="nav-items col-1 mt-1">Docs</a>
-        <a href="https://blog.atomist.com/?_ga=2.174237226.948132213.1553277995-6570700.1552576324" class="nav-items col-1 mt-1">Blog</a>
-        <a href="https://app.atomist.com/user/login?_ga=2.246771340.948132213.1553277995-6570700.1552576324" class="nav-items col-1 text-right offset-md-2 mt-1">Log in</a>
-        <button id="get-started-top" class="col-1 text-nowrap btn btn-primary btn-lg" onclick="window.location.href = 'https://app.atomist.com/user/signup?_ga=2.246771340.948132213.1553277995-6570700.1552576324';" >Get Started</button>
+        <a class="nav-items col-1 offset-md-4 mt-1" href="developer.html">Developer</a>
+        <a href="pricing.html" class="nav-items col-1 mt-1">Pricing</a>
+        <a href="#" class="nav-items col-1 mt-1">Docs</a>
+        <a href="#" class="nav-items col-1 mt-1">Blog</a>
+        <a href="#" class="nav-items col-1 text-right offset-md-2 mt-1">Log in</a>
+        <button id="get-started-top" class="col-1 text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" >Get Started</button>
     </div>
 
       <!-- Intro section -->
@@ -99,40 +97,33 @@
           <div class="row d-flex row-w">
             <div class="col">
 
-            <div class="card-deck">
-
-              <div class="card card-h bg-gray border-0 rounded-0">
-               <div class="row no-gutters">
-                <div class="col-md-3">
-                  <img class="card-img" src="src/assets/illo-automatic-delivery.png" alt="">
+              <div class="card-responsive">
+              <div class="card card-h card-item bg-gray border-0 rounded-0">
+                <div class="div-icon">
+                  <img class="card-icon" src="src/assets/illo-automatic-delivery.png" alt="">
                 </div>
-                <div class="col-md-9">
-                  <div class="card-body">
+                  <div class="card-body card-content">
                     <h5 class="card-title">Automatic Delivery for All of Your Projects</h5>
                     <p class="card-text"> Atomist enables automatic delivery across all your projects.
                         Evolve that flow in one place, not repository by repository.
                         Enabled by the Software Delivery Machine’s event-driven approach,
                         delivery is consistent and automatic across all projects.</p>
                   </div>
-                </div>
               </div>
-              </div>
+            </div>
 
-              <div class="card card-h bg-gray border-0 rounded-0">
-              <div class="row no-gutters">
-                <div class="col-md-3 pt-3 pl-3">
-                  <img class="card-img" src="src/assets/illo-control-delivery.png" alt="">
+            <div class="card-responsive">
+              <div class="card card-h card-item bg-gray border-0 rounded-0">
+                <div class="div-icon">
+                  <img class="card-icon" src="src/assets/illo-control-delivery.png" alt="">
                 </div>
-                <div class="col-md-9">
-                  <div class="card-body">
+                  <div class="card-body card-content">
                     <h5 class="card-title">Visualize and Control the Entire Delivery Flow</h5>
                     <p class="card-text"> All activity across the delivery flow,
                         from initial commit through promotion and verification in production, is visible in one place.
                         Always know the state of delivery for your projects.
                         Take direct action when needed in chat or by issuing commands.</p>
                   </div>
-                </div>
-              </div>
               </div>
             </div>
 
@@ -144,15 +135,14 @@
           <div class="row row-w">
             <div class="col">
 
-            <div class="card-deck">
 
-              <div class="card card-h bg-gray border-0 rounded-0">
-              <div class="row no-gutters">
-                <div class="col-md-3 pt-3 pl-3">
-                  <img class="card-img" src="src/assets/illo-create-projects.png" alt="">
+
+              <div class="card-responsive">
+              <div class="card card-h card-item bg-gray border-0 rounded-">
+                <div class="div-icon">
+                  <img class="card-icon" src="src/assets/illo-create-projects.png" alt="">
                 </div>
-                <div class="col-md-9">
-                  <div class="card-body">
+                  <div class="card-body card-content">
                     <h5 class="card-title">Create New Deployable Projects Instantly</h5>
                     <p class="card-text">Use virtually any repository as a starter.
                         Easily start from known good code bases, whether one in our list,
@@ -160,26 +150,24 @@
                         Atomist creates a new repository for you, and the project is automatically
                         deliverable from the initial commit.</p>
                   </div>
-                </div>
               </div>
               </div>
 
-              <div class="card card-h bg-gray border-0 rounded-0">
-              <div class="row no-gutters">
-                <div class="col-md-3 pt-3 pl-3">
-                  <img class="card-img" src="src/assets/illo-kubernetes.png" alt="">
+
+              <div class="card-responsive">
+              <div class="card card-h card-item bg-gray border-0 rounded-">
+                <div class="div-icon">
+                  <img class="card-icon" src="src/assets/illo-kubernetes.png" alt="">
                 </div>
-                <div class="col-md-9">
-                  <div class="card-body">
+                  <div class="card-body card-content">
                     <h5 class="card-title">Deploy to Any Kubernetes Cluster</h5>
                     <p class="card-text">Easy one-time setup to deploy to Kubernetes whether you use Minikube,
                         Google Kubernetes Engine, Azure Kubernetes Service, Amazon Elastic Kubernetes Service,
                         RedHat OpenShift, Pivotal Container Service or open source Kubernetes.</p>
                   </div>
-                </div>
               </div>
               </div>
-            </div>
+
 
             </div>
           </div>
@@ -189,42 +177,35 @@
           <div class="row row-w">
             <div class="col">
 
-            <div class="card-deck">
-
-              <div class="card card-h bg-gray border-0 rounded-0">
-              <div class="row no-gutters">
-                <div class="col-md-3 pt-3 pl-3">
-                  <img class="card-img" src="src/assets/illo-collaboration.png" alt="">
+              <div class="card-responsive">
+              <div class="card card-h card-item bg-gray border-0 rounded-">
+                <div class="div-icon">
+                  <img class="card-icon" src="src/assets/illo-collaboration.png" alt="">
                 </div>
-                <div class="col-md-9">
-                  <div class="card-body">
+                  <div class="card-body card-content">
                     <h5 class="card-title">Collaboration Built-In</h5>
                     <p class="card-text">Chat-native interface makes your delivery process
                         part of the conversation in Slack or Microsoft Teams. See delivery progress
                         in chat and take action immediately, by merging a pull request, assigning an issue,
                         or approving a deployment. Atomist bot commands make it easy to create projects or initiate a deployment.</p>
                   </div>
-                </div>
               </div>
               </div>
 
-              <div class="card card-h bg-gray border-0 rounded-0">
-              <div class="row no-gutters">
-                <div class="col-md-3 pt-3 pl-3">
-                  <img class="card-img" src="src/assets/illo-fully-programmable.png" alt="">
+              <div class="card-responsive">
+              <div class="card card-h card-item bg-gray border-0 rounded-">
+                <div class="div-icon">
+                  <img class="card-icon" src="src/assets/illo-fully-programmable.png" alt="">
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
+                  <div class="card-body card-content">
                     <h5 class="card-title">Fully Programmable Delivery That Evolves with You</h5>
                     <p class="card-text">When you need to change how delivery works – for example,
                         to add vulnerability scanning, push Docker images to a different artifact store,
                         or add your own bot commands – the delivery process is completely programmable.
                         We think <a href="#">code speaks louder than YAML</a>.</p>
                   </div>
-                </div>
               </div>
               </div>
-            </div>
 
             </div>
           </div>
@@ -353,7 +334,7 @@
           <div class="row pb-5">
             <div class="col">
 
-              <div class="card-deck">
+            <div class="card-deck">
 
                 <div class="card shadow-lg border-0 rounded-0">
                   <div class="card-body">
@@ -365,12 +346,12 @@
                       <li>Create and deliver Node applications</li>
                       <li>Automatic autofix (lint), build, test, Docker build and deploy to Docker registry</li>
                       <li>Test deploy to Atomist-hosted Kubernetes cluster</li>
-                      <li>Deploy to your own Kubernetes cluster</li>
+                      <li>Deploy to your own Kubernet es cluster</li>
                     </ul>
                     <br>
                     <h6 class="card-subtitle text-muted">Get started delivering Node applications right now.</h6>
                     <br>
-                    <a class="btn btn-success" role="button" href="#">Get Started for Free</a>
+                    <a class="btn btn-darkgreen" role="button" href="#">Get Started for Free</a>
                   </div>
                 </div>
 
@@ -389,7 +370,7 @@
                     <br>
                     <h6 class="card-subtitle text-muted">Get started with your own SDM right now.</h6>
                     <br>
-                    <a class="btn btn-success" role="button" href="#">Install</a>
+                    <a class="btn btn-darkgreen" role="button" href="#">Install</a>
                   </div>
                 </div>
 
@@ -513,7 +494,6 @@
         </div>
       </div>
 
-
       <!-- Ready to try section -->
       <div class="row pt-5 pb-5 text-center" id="ready-to-try">
         <div class="col">
@@ -537,18 +517,18 @@
               <nav class="nav justify-content-center">
                 <ul class="nav flex-column text-right">
                   <li class="mb-3"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                  <li class="mb-3"><a class="nav-link disabled" href="">Product</a></li>
+                  <li class="mb-3"><a class="nav-link disabled" href="#">Product</a></li>
                   <li class="mb-3"><a class="nav-link" href="developer.html">Developers</a></li>
                 </ul>
                 <ul class="nav flex-column ml-5 mr-5">
                   <li class="mb-3"><a class="nav-link" href="about.html">About</a></li>
                   <li class="mb-3"><a class="nav-link" href="careers.html">Careers</a></li>
-                  <li class="mb-3"><a class="nav-link" href="">Contact</a></li>
-                  <li class="mb-3"><a class="nav-link" href="https://github.com/atomist?_ga=2.189617570.829129499.1553291524-1714051839.1552404641">Open Source</a></li>
+                  <li class="mb-3"><a class="nav-link js-contact">Contact</a></li>
+                  <li class="mb-3"><a class="nav-link" target='_blank' href="https://github.com/atomist?_ga=2.189617570.829129499.1553291524-1714051839.1552404641">Open Source</a></li>
                 </ul>
                 <ul class="nav flex-column text-left">
-                  <li class="mb-3"><a class="nav-link" href="https://blog.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Blog</a></li>
-                  <li class="mb-3"><a class="nav-link" href="https://docs.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Docs</a></li>
+                  <li class="mb-3"><a class="nav-link" target='_blank' href="https://blog.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Blog</a></li>
+                  <li class="mb-3"><a class="nav-link" target='_blank' href="https://docs.atomist.com/?_ga=2.255988098.829129499.1553291524-1714051839.1552404641">Docs</a></li>
                   <li class="mb-3"><a class="nav-link" href="resources.html">Resources</a></li>
                 </ul>
               </nav>
@@ -558,10 +538,10 @@
             <div class="col">
               <nav class="nav justify-content-center">
                   <ul class="nav">
-                    <li><a href="https://twitter.com/atomist?_ga=2.201162279.829129499.1553291524-1714051839.1552404641"><i class="fab fa-twitter fa-2x"></i></a></li>
-                    <li class="ml-5"><a href="https://github.com/atomist?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-github fa-2x"></i></a></li>
-                    <li class="mr-5 ml-5"><a href="https://join.atomist.com/?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-slack fa-2x"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCvKTtZtPh_MHkQJuAgvzKOA?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-youtube fa-2x"></i></a></li>
+                    <li><a target='_blank' href="https://twitter.com/atomist?_ga=2.201162279.829129499.1553291524-1714051839.1552404641"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li class="ml-5"><a target='_blank' href="https://github.com/atomist?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-github fa-2x"></i></a></li>
+                    <li class="mr-5 ml-5"><a target='_blank' href="https://join.atomist.com/?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-slack fa-2x"></i></a></li>
+                    <li><a target='_blank' href="https://www.youtube.com/channel/UCvKTtZtPh_MHkQJuAgvzKOA?_ga=2.259798403.829129499.1553291524-1714051839.1552404641"><i class="fab fa-youtube fa-2x"></i></a></li>
                   </ul>
                 </nav>
             </div>
@@ -588,6 +568,54 @@
       </div>
       <!-- end of footer section -->
 
+      <!-- Contact button-->
+      <button id="contact-button">
+        <i class="fas fa-comment-alt fa-2x"></i>
+      </button>
+      <!-- End of Contact button-->
+
+      <!-- Interface window-->
+      <div id="contact-interface">
+        <div id="salute">
+          <img class="ml-4" src="src/assets/Atomist-Mark-Color.png" alt="">
+          <h2 class="pt-3 ml-4">Hi there 👋</h2>
+        </div>
+        <div class="body">
+          <div class="int-section">
+            <h5>Start a conversation</h5>
+            <p>The team will reply as soon as they can</p>
+            <img src="src/assets/dd_avatar-badged-1513347161.png" alt="David" class="avatar" title="David">
+            <img src="src/assets/cd_avatar-1513326172.png" alt="Christian" class="avatar" title="Christian">
+            <br>
+            <button><i class="fas fa-paper-plane"></i> New conversation</button>
+          </div>
+          <div class="int-section">
+            <h5>Get a demo</h5>
+            <p>Interested in evaluating Atomist? Request a demo meeting with us</p>
+            <button>Request a demo</button>
+          </div>
+          <div class="int-section">
+            <h6>Find an answer yourself</h6>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for articles...">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="int-section">
+            <h5>Stay in the know. Subscribe to our list.</h5>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="name@example.com">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Interface window-->
+
     </div>
 
     <!-- Optional JavaScript -->
@@ -595,5 +623,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="src/js/index.js"></script>
   </body>
 </html>
