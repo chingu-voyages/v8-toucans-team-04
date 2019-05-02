@@ -15,17 +15,17 @@
 
 <!-- Collapsed Navigation -->
 
-<div class="position-fixed" style="width: 100%;height:100vh;z-index:20;visibility: collapse" id="nav-side">
-    <img src="src/assets/atomist_logo_shapes_banner-home.jpg" style="position:absolute;z-index:-10;left:-1500px;">
-    <img src="src/assets/Atomist-Logo-White-Horiz.png" style="width: 110px" class="m-3">
-    <div class="container h-100 ml-0 d-flex flex-column" style="z-index:10">
-            <div class="nav-collapsed  row-1" style="z-idex:20;">Developer</div>
-            <div class="nav-collapsed  row-1" style="z-idex:20;">Pricing</div>
-            <div class="nav-collapsed  row-1" style="z-idex:20;">Docs</div>
-            <div class="nav-collapsed  row-1" style="z-idex:20;">Blog</div>
-            <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
-            <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" id="btn-start-collapsed" >Get Started</button>
-    </div>
+<div class="position-fixed" id="nav-side">
+  <img id="banner-collapsed" src="src/assets/atomist_logo_shapes_banner-product.jpg" >
+  <div id="nav-collapsed-container" class="container h-100 ml-3 d-flex flex-column mt-5">
+          <!-- <div class="nav-collapsed  row-1" >Developer</div> -->
+          <a href="developer.html" class="nav-collapsed row-1 mt-5">Developer</a>
+          <a href="pricing.html" class="nav-collapsed row-1">Pricing</a>
+          <a href="#" class="nav-collapsed row-1">Docs</a>
+          <a href="#" class="nav-collapsed row-1">Blog</a>
+          <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
+          <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" id="btn-start-collapsed" >Get Started</button>
+  </div>
 </div>
 
 <!-- Nav menu button -->
@@ -33,11 +33,14 @@
     <div class="col-12 ml-0" onclick="toggleNav()" id="nav-button">☰</div>
 </div>
 
-      <img src="src/assets/atomist_logo_shapes_banner-home.jpg" id="banner">
+<!-- Logo & Banner -->
+<img src="src/assets/atomist_logo_shapes_banner-pricing.jpg" id="banner">
 <div class="row">
-  <div class="col-2 mt-4 position-absolute">
-    <img src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5" style="left:0; width: 200px;">
-  </div>
+      <div class="col-2 mt-4 position-absolute">
+        <a href="index.html">
+            <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5">
+        </a>
+      </div>
 </div>
 
   <div class="container-fluid">

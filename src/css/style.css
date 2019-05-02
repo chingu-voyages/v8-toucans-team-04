@@ -8,7 +8,7 @@
 }
 #atomist-logo{
     left:0;
-    width: 200px;
+    z-index: 100;
 }
 #nav-bar{
    color:white;
@@ -16,6 +16,10 @@
 }
 .nav-items{
     color:inherit;
+}
+.nav-items:hover{
+  color:inherit;
+  text-decoration: none;
 }
 #img-goals{
     width: 90vh;
@@ -33,12 +37,19 @@
     width: 100%;
     height:100vh;
     z-index:20;
+    left:-10px;
     visibility: collapse;
 }
 .nav-collapsed{
     color: white;
     font-size: 25px;
-    margin-top: 25px
+    margin-top: 25px;
+    margin-left: 10px;
+
+}
+.nav-collapsed:hover{
+  color: white;
+  text-decoration: none;
 }
 #banner-collapsed{
     position:absolute;
@@ -78,10 +89,19 @@
     #nav-button{
         visibility: hidden;
     }
+    #atomist-logo{
+      width: 200px;
+    }
+    .description{
+      bottom: 100px;
+    }
 }
 @media (max-width: 1200px){
-        #nav-bar{
+    #nav-bar{
         visibility: hidden;
+    }
+    #atomist-logo{
+      width:150px;
     }
 }
 
@@ -129,6 +149,9 @@ border-bottom-right-radius: 5px;
 .font-dark-gray{
     color: rgb(158,158,167);
 }
+.description{
+  position: relative;
+}
 .dollar-sign{
     font-size: 18px;
     position: relative;
@@ -149,6 +172,10 @@ border-bottom-right-radius: 5px;
 }
 .btn-primary:hover{
     background-color: rgb(67,183,136);
+}
+.btn-primary:active{
+  background-color: rgb(67,183,136);
+
 }
 .btn-secondary{
     color: white;
