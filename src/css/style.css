@@ -152,6 +152,13 @@ border-bottom-right-radius: 5px;
 .description{
   position: relative;
 }
+#description-container-pro{
+  overflow: visible;
+}
+#description-pro{
+  height: 100%;
+  overflow: visible;
+}
 .dollar-sign{
     font-size: 18px;
     position: relative;
