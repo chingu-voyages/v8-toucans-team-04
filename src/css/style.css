@@ -111,31 +111,19 @@
   top: 40px;
   padding-bottom: 200px;
 }
-
 #title-pricing{
     font-size:55px;
     color: white;
     text-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
-
 .plan-box{
     height: 400px;
     padding-bottom: 100px;
-    /* border-radius: 10px; */
     overflow: hidden;
     max-height: 380px;
+    box-shadow: 0 10px 30px 20px rgba(0,0,0,.05);
+    border-radius: 5px;
 }
-.pb-top{
-border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-}
-.pb-bottom{
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-}
-/* .btn-plan{
-    margin-top: 75px;
-} */
 .btn-plan{
     position: relative;
     bottom: 20px;
@@ -147,17 +135,7 @@ border-bottom-right-radius: 5px;
     font-size: 35px;
 }
 .font-dark-gray{
-    color: rgb(158,158,167);
-}
-.description{
-  position: relative;
-}
-#description-container-pro{
-  overflow: visible;
-}
-#description-pro{
-  height: 100%;
-  overflow: visible;
+    color: rgb(113,114,116);
 }
 .dollar-sign{
     font-size: 18px;
