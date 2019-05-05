@@ -16,30 +16,33 @@
 <!-- Collapsed Navigation -->
 
 <div class="position-fixed" id="nav-side">
-    <img id="banner-collapsed" src="src/assets/atomist_logo_shapes_banner-home.jpg" >
-    <img id="logo-collapsed" src="src/assets/Atomist-Logo-White-Horiz.png" class="m-3">
-    <div id="nav-collapsed-container" class="container h-100 ml-0 d-flex flex-column">
-            <div class="nav-collapsed  row-1" >Developer</div>
-            <div class="nav-collapsed  row-1" >Pricing</div>
-            <div class="nav-collapsed  row-1" >Docs</div>
-            <div class="nav-collapsed  row-1" >Blog</div>
-            <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
-            <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" id="btn-start-collapsed" >Get Started</button>
-    </div>
+  <img id="banner-collapsed" src="src/assets/atomist_logo_shapes_banner-product.jpg" >
+  <!-- <img id="logo-collapsed" src="src/assets/Atomist-Logo-White-Horiz.png" class="m-3"> -->
+  <div id="nav-collapsed-container" class="container h-100 ml-3 d-flex flex-column mt-5">
+          <!-- <div class="nav-collapsed  row-1" >Developer</div> -->
+          <a href="developer.html" class="nav-collapsed row-1 mt-5">Developer</a>
+          <a href="pricing.html" class="nav-collapsed row-1">Pricing</a>
+          <a href="#" class="nav-collapsed row-1">Docs</a>
+          <a href="#" class="nav-collapsed row-1">Blog</a>
+          <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
+          <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" id="btn-start-collapsed" >Get Started</button>
+  </div>
 </div>
 
 <!-- Nav menu button -->
-<div id="nav-button-holder" class="row d-flex text-right position-fixed" >
+<div id="nav-button-holder" class="row d-flex text-right position-absolute" >
     <div class="col-12 ml-0" onclick="toggleNav()" id="nav-button">☰</div>
 </div>
 
 <!-- Logo & Banner -->
      <img src="src/assets/atomist_logo_shapes_banner-home.jpg" id="banner">
-<div class="row">
+     <div class="row">
       <div class="col-2 mt-4 position-absolute">
-          <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5">
+        <a href="index.html">
+            <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5">
+        </a>
       </div>
-  </div>
+    </div>
 
     <div class="container-fluid">
 
@@ -55,18 +58,52 @@
     </div>
 
       <!-- Intro section -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <!-- Title -->
+            <div class="container-fluid">
+              <div class="row d-flex justify-content-center">
+                    <h1 id="intro-ssd" class="text-center mt-5 col-lg-8 ">The Self-Service Delivery Platform</h1>
+              </div>
+            </div>
+            <!-- Subtitle -->
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                      <div id="intro-unleash" class="text-center mt-3">Unleash autonomy</div>
+                  </div>
+                </div>
+            </div>
+            <!-- Image Sample -->
+            <div class="container-fluid d-flex justify-content-center mt-4">
+                <div class="row">
+                  <div class="col-12">
+                      <img id="img-goals" src="src/assets/App-SDM-Goals-Execution.png" class="d-block m-auto">
+                      </div>
+                </div>
+            </div>
+            <!-- Summary -->
+            <div class="container-fluid mt-5">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-6 col-md-9 text-center font-primary">
+                        Atomist enables Self-Service Delivery, so that delivering your app just takes a <span id="git-push-border">git push</span>. Define automated delivery flows that smartly review, autofix, build, test and deploy.
+                        No pipeline required.
+                  </div>
+                </div>
+            </div>
+            <!-- Get Started Button -->
+            <div class="container mb-5">
+              <div class="row">
+                <div class="col">
+                    <button class="text-nowrap btn btn-primary mx-auto d-block mt-5 btn-lg mb-5">Get Started for Free</button>
+                </div>
+              </div>
+            </div>
 
-      <div class="row mt-5 d-flex">
-          <div class="container col-12">
-            <h1 id="intro-ssd" class="text-center mt-5 col-6 offset-md-3 ">The Self-Service Delivery Platform</h1>
-            <div id="intro-unleash" class="text-center mt-3">Unleash autonomy</div>
-            <img id="img-goals" src="src/assets/App-SDM-Goals-Execution.png" class="mt-5 d-block m-auto">
-            <div class="text-center container mt-2 col-7 font-primary" >Atomist enables Self-Service Delivery, so that delivering your app just takes a <span id="git-push-border">git push</span>. Define automated delivery flows that smartly review, autofix, build, test and deploy.
-                No pipeline required.</div>
-            <button class="text-nowrap btn btn-primary mx-auto d-block mt-5 btn-lg">Get Started for Free</button>
+          </div>
+        </div>
       </div>
-    </div>
-
 
       <!-- What is section -->
 
@@ -75,7 +112,7 @@
             <div class="col">
                 <h2 class="text-center">What is Self-Service Delivery?
                 </h2>
-                <p class="text-center">Self-Service Delivery removes the friction of having to request an environment for a project, or the toil of setting up the delivery process yourself. It puts the entire delivery process in front of you, so that you always have visibility and control. The information and tools necessary to ship great software are right at your fingertips, enabling you to start new projects, develop and have those projects delivered automatically.<br/><br/>
+                <p class="text-center font-dark-gray">Self-Service Delivery removes the friction of having to request an environment for a project, or the toil of setting up the delivery process yourself. It puts the entire delivery process in front of you, so that you always have visibility and control. The information and tools necessary to ship great software are right at your fingertips, enabling you to start new projects, develop and have those projects delivered automatically.<br/><br/>
 
                     Delivery is more than the act of building, testing and deploying. Delivery is everything you do in order to ship, including creating new projects, updating dependencies, refactoring code and countless more tasks. Self-Service Delivery means that you can develop and automate your own tasks, to scratch your own itches.</p>
             </div>

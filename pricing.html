@@ -13,192 +13,263 @@
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
 
     <title>Atomist | Software delivery information for cloud-native applications</title>
-  </head>
-  <body class="font-primary">
+</head>
+<body class="font-primary">
 
 <!-- Collapsed Navigation -->
       
 <div class="position-fixed" id="nav-side">
     <img id="banner-collapsed" src="src/assets/atomist_logo_shapes_banner-product.jpg" >
-    <img id="logo-collapsed" src="src/assets/Atomist-Logo-White-Horiz.png" class="m-3">
-    <div id="nav-collapsed-container" class="container h-100 ml-0 d-flex flex-column">
-            <div class="nav-collapsed  row-1" >Developer</div>
-            <div class="nav-collapsed  row-1" >Pricing</div>
-            <div class="nav-collapsed  row-1" >Docs</div>
-            <div class="nav-collapsed  row-1" >Blog</div>
+    <div id="nav-collapsed-container" class="container h-100 ml-3 d-flex flex-column mt-5">
+            <!-- <div class="nav-collapsed  row-1" >Developer</div> -->
+            <a href="developer.html" class="nav-collapsed row-1 mt-5">Developer</a>
+            <a href="pricing.html" class="nav-collapsed row-1">Pricing</a>
+            <a href="#" class="nav-collapsed row-1">Docs</a>
+            <a href="#" class="nav-collapsed row-1">Blog</a>
             <div id="login-collapsed" class="nav-collapsed  row-1">Log in</div>
             <button class=" text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" id="btn-start-collapsed" >Get Started</button>
     </div>
 </div>
 
 <!-- Nav menu button -->
-<div id="nav-button-holder" class="row d-flex text-right position-fixed" >
+<div id="nav-button-holder" class="row d-flex text-right position-absolute mt-3" >
     <div class="col-12 ml-0" onclick="toggleNav()" id="nav-button">☰</div>
 </div>
 
 <!-- Logo & Banner -->
-     <img src="src/assets/atomist_logo_shapes_banner-pricing.jpg" id="banner">
+<img src="src/assets/atomist_logo_shapes_banner-pricing.jpg" id="banner">
 <div class="row">
       <div class="col-2 mt-4 position-absolute">
-          <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5">
+        <a href="index.html">
+            <img id="atomist-logo" src="src/assets/Atomist-Logo-White-Horiz.png" class="img-responsive position-absolute ml-5">
+        </a>
       </div>
-  </div>
+</div>
 
-<div class="container-fluid">
+<!-- Navigation bar section -->
 
-      <!-- Navigation bar section -->
+<div class="row d-flex flex-row justify-content-center mt-5 mr-1 position-relative"id="nav-bar">
+    <a href="developer.html"class="nav-items col-1 offset-md-4 mt-1">Developer</a>
+    <a href="pricing.html" class="nav-items col-1 mt-1">Pricing</a>
+    <a href="#" class="nav-items col-1 mt-1">Docs</a>
+    <a href="#" class="nav-items col-1 mt-1">Blog</a>
+    <a href="#" class="nav-items col-1 text-right offset-md-2 mt-1">Log in</a>
+    <button id="get-started-top" class="col-1 text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" >Get Started</button>
+</div>
 
-  <div class="row d-flex flex-row justify-content-center mt-5 mr-1 position-relative"id="nav-bar">
-        <a class="nav-items col-1 offset-md-4 mt-1" href="developer.html">Developer</a>
-        <a href="pricing.html" class="nav-items col-1 mt-1">Pricing</a>
-        <a href="#" class="nav-items col-1 mt-1">Docs</a>
-        <a href="#" class="nav-items col-1 mt-1">Blog</a>
-        <a href="#" class="nav-items col-1 text-right offset-md-2 mt-1">Log in</a>
-        <button id="get-started-top" class="col-1 text-nowrap btn btn-primary btn-lg" onclick="window.location.href = '#';" >Get Started</button>
-  </div>
+<div id="body-pricing" class="container-fluid mb-5">
         
         <!-- Body -->
         
-<div class="row justify-content-center no-gutters">
-    <div class="row d-flex">
-                <!-- <div class="col-md-8 offset-md-2"> -->
-      <h1 id="title-pricing" class="col-8 text-center mt-5 mx-auto">Self-Service Software Delivery for Developers, Teams, and Enterprises</h1>
-    </div>
-        <!-- Plan Boxes -->
-  <div class="col-md-12">
-    <div class="row">
-
-      <!-- Beta -->
-        <div class="col-md-4 col-sm-12">
-          <!-- box -->
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
+  <div class="row justify-content-center no-gutters">
+      <div class="row d-flex">
+                  <!-- <div class="col-md-8 offset-md-2"> -->
+        <h1 id="title-pricing" class="col-8 text-center mt-5 mx-auto">Self-Service Software Delivery for Developers, Teams, and Enterprises</h1>
+      </div>
+    <div class="col-md-12">
+      <div class="row">
+      <!-- Plan Boxes -->
+        <!-- Beta -->
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <!-- box -->
+            <div class="container-fluid">
+              <div class="row h-100 w-100 no-gutters">
+                <div class="col h-100 w-100 no-gutters">
                   <div class="plan-box col-md-12 mt-5">
-                  <!-- gray -->
-                      <div class="container-fluid bg-dark-gray pb-top ">
-                        <div class="row">
-                          <div class="col mt-3 ml-4 plan-label">Free (Beta)</div>
-                        </div>  
-                        <div class="row">
-                          <div class="col mb-4 ml-4 font-dark-gray">For Developers</div>
-                        </div>  
-                      </div>
-                  <!-- white -->
-                      <div class="container-fluid bg-white pb-bottom d-flex flex-column h-75">
-                        <div class="row">
-                          <div class="col ml-4"><span class="plan-price"><span class="dollar-sign">$</span>0</span><span class="font-dark-gray"> /month</span></span>
-                          </div>
-                        </div>
-                        <div class="row w-100 h-100 mx-auto">
-                          <div class="col align-self-end">
-                            <button class="btn-plan btn btn-primary w-100 btn-block ">Get Started</button>
-                          </div>
+                    <!-- gray -->
+                    <div class="container-fluid bg-dark-gray ">
+                      <div class="row">
+                        <div class="col mt-3 ml-4 plan-label">Free (Beta)</div>
+                      </div>  
+                      <div class="row">
+                        <div class="col mb-4 ml-4 font-dark-gray">For Developers</div>
+                      </div>  
+                    </div>
+                    <!-- white -->
+                    <div class="container-fluid bg-white d-flex flex-column h-75">
+                      <div class="row">
+                        <div class="col ml-4"><span class="plan-price"><span class="dollar-sign">$</span>0</span><span class="font-dark-gray"> /month</span></span>
                         </div>
                       </div>
+                      <div class="row w-100 h-100 mx-auto">
+                        <div class="col align-self-end">
+                          <button class="btn-plan btn btn-primary w-100 btn-block ">Get Started</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+              
+          <!-- Description -->
+            <div class="container-fluid description mt-4">
+              <div class="row">
+                <div class="col ml-1">
+                  <div class="container-fluid ml-3">
+                    <div class="row">
+                      <div class="col-1">
+                        ✔️</div>
+                      <div class="col-11 mb-2">
+                        Works with GitHub.com Public & Private repositories</div>
+                      <div class="col-1">
+                        ✔️</div>
+                      <div class="col-11 mb-2">
+                        1 workspace<br></div>
+                      <div class="col-1">
+                        ✔️</div>
+                      <div class="col-11 mb-2">
+                        1 user</div>
+                      <div class="col-1">
+                        ✔️</div>
+                      <div class="col-11 mb-2">
+                            Community chat acces
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      <!-- Professional -->
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <!-- box -->
+            <div class="container-fluid">
+              <div class="row no-gutters">
+                <div class="col no-gutters">
+                  <div class="plan-box col-md-12 mt-5 ">
+                    <!-- gray -->
+                    <div class="container-fluid bg-dark-gray">
+                      <div class="row">
+                        <div class="col mt-3 ml-4 plan-label">Professional</div>
+                      </div>  
+                      <div class="row">
+                        <div class="col mb-4 ml-4 font-dark-gray">For teams developing in the cloud</div>
+                      </div>  
+                    </div>
+                    <!-- white -->
+                    <div class="container-fluid bg-white d-flex flex-column h-75">
+                      <div class="row">
+                        <div class="col ml-4"><span class="plan-price"><span class="dollar-sign">$</span>833</span><span class="font-dark-gray"> /month</span><br>
+                          <span class="font-dark-gray">BILLED ANNUALLY</span></div>
+                      </div>  
+                      <div class="row w-100 h-100 mx-auto">
+                        <div class="col align-self-end">
+                          <button class="btn-plan btn btn-primary w-100 btn-block">Get Started</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <!-- Description -->
+            <div class="container-fluid description mt-4">
+              <div class="row">
+                <div class="col ml-1">
+                  <div class="container-fluid ml-3">
+                    <div class="row">
+                      <div class="col-1">
+                          ✔️</div>
+                      <div class="col-11 mb-2">Everything in Free Plan</div>
+                      <div class="col-1">
+                          ✔️</div>
+                      <div class="col-11 mb-2">First 10 users included</div>
+                      <div class="col-1">
+                          ✔️</div>
+                      <div class="col-11 mb-2">Up to 10,000 events /month</div>
+                      <div class="col-1">
+                          ✔️</div>
+                      <div class="col-11 mb-2">Support for both private and public repos</div>
+                      <div class="col-1">
+                          ✔️</div>
+                      <div class="col-11 mb-2">Works with GitHub.com</div>
+                      <div class="col-1">
+                          ✔️</div>
+                      <div class="col-11 mb-2">Access to Web Workspace, Slack Bot, and API</div>
+                      <div class="col-1">
+                          ✔️</div>
+                          <div class="col-11 mb-2">Single sign-on via GitHub</div>
+                      <div class="col-1">
+                          ✔️</div>
+                          <div class="col-11 mb-2">Community chat access</div>
+                      
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+                
+          </div>
+        <!-- Enterprise -->
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <!-- box -->
+            <div class="container-fluid">
+              <div class="row no-gutters">
+                <div class="col no-gutters">
+                  <div class="plan-box col-md-12 mt-5">
+                    <!-- gray -->
+                    <div class="container-fluid bg-dark-gray">
+                      <div class="row">
+                        <div class="col mt-3 ml-4 plan-label">Enterprise</div>
+                      </div>  
+                      <div class="row">
+                        <div class="col mb-4 ml-4 font-dark-gray">For teams developing in the cloud</div>
+                      </div>  
+                    </div>
+                    <!-- white -->
+                    <div class="container-fluid bg-white d-flex flex-column h-75">
+                      <div class="row">
+                        <div class="col ml-4"><span class="plan-price">Contact Us<br>
+                        </div>
+                      </div> 
+                      <div class="row w-100 h-100 mx-auto">
+                        <div class="col align-self-end">
+                          <button class="btn btn-plan btn-article btn-primary w-100 btn-block">Talk To Sales</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-            
         <!-- Description -->
-          <div class="container-fluid">
+          <div class="container-fluid description mt-4">
             <div class="row">
               <div class="col ml-1">
                 <div class="container-fluid ml-3">
                   <div class="row">
                     <div class="col-1">
-                      ✔️</div>
-                    <div class="col-11">
-                      Works with GitHub.com Public & Private repositories</div>
+                        ✔️</div>
+                    <div class="col-11 mb-2">
+                        Everything in Professional Plan</div>
                     <div class="col-1">
-                      ✔️</div>
-                    <div class="col-11">
-                      1 workspace<br></div>
-                    <div class="col-1">
-                      ✔️</div>
-                    <div class="col-11">
-                      1 user</div>
-                    <div class="col-1">
-                      ✔️</div>
-                    <div class="col-11">
-                          Community chat acces
+                        ✔️
                     </div>
+                    <div class="col-11 mb-2">
+                        Git support for GitHub Enterprise and Bitbucket Server</div>
+                    <div class="col-1">
+                        ✔️
+                    </div>
+                    <div class="col-11 mb-2">
+                        SSO & Directory Integration Support</div>
+                    <div class="col-1">
+                        ✔️
+                    </div>
+                    <div class="col-11 mb-2">
+                        Priority Support</div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-        </div>
-      <!-- Professional -->
-          <div class="col-md-4">
-              <div class="plan-box col-md-12 mx-auto mt-5">
-                <div class="container bg-dark-gray pb-top">
-                  <div class="row">
-                    <div class="col mt-3 ml-4 plan-label">Professional</div>
-                  </div>  
-                  <div class="row">
-                    <div class="col mb-4 ml-4 font-dark-gray">For teams developing in the cloud</div>
-                  </div>  
                 </div>
-                <div class="container bg-white pb-bottom d-flex flex-column h-75">
-                  <div class="row">
-                    <div class="col ml-4"><span class="plan-price"><span class="dollar-sign">$</span>833</span><span class="font-dark-gray"> /month</span><br>
-                      <span class="font-dark-gray">BILLED ANNUALLY</span></div>
-                  </div>  
-                  <div class="row w-100 h-100 mx-auto">
-                    <div class="col align-self-end">
-                      <button class="btn-plan btn btn-primary w-100 btn-block">Get Started</button>
-                    </div>
-                  </div>
-                </div>
+              </div>
             </div>
-      <!-- Description -->
-              <div class="col-4">
-                Everything in Free Plan<br>
-      First 10 users included<br>
-      Up to 10,000 events /month<br>
-      Support for both private and public repos<br>
-      Works with GitHub.com<br>
-      Access to Web Workspace, Slack Bot, and API<br>
-      Single sign-on via GitHub<br>
-      Community chat access<br>
-      Email and chat support<br>
-                </div>
           </div>
-      <!-- Enterprise -->
-          <div class="col-md-4">
-            <div class="plan-box col-md-12 mx-auto mt-5">
-              <div class="container bg-dark-gray pb-top">
-                <div class="row">
-                  <div class="col mt-3 ml-4 plan-label">Enterprise</div>
-                </div>  
-                <div class="row">
-                  <div class="col mb-4 ml-4 font-dark-gray">For teams developing in the cloud</div>
-                </div>  
-              </div>
-              <div class=" container bg-white pb-bottom d-flex flex-column h-75">
-                <div class="row">
-                  <div class="col ml-4"><span class="plan-price">Contact Us<br>
-                  </div>
-                </div> 
-                <div class="row w-100 h-100 mx-auto">
-                    <div class="col align-self-end">
-                      <button class="btn btn-plan btn-article btn-primary w-100 btn-block">Talk To Sales</button>
-                    </div>
-                </div>
-              </div>
-          </div>
-      <!-- Description -->
-              <div class="col-4">
-              Everything in Professional Plan<br>
-Git support for GitHub Enterprise and Bitbucket Server<br>
-SSO & Directory Integration Support<br>
-Priority Support<br>
-              </div>
-          </div>      
+        </div>
       </div>
+    </div>
   </div>
 </div>
       
@@ -314,13 +385,11 @@ Priority Support<br>
       </div>
       <!-- End of Interface window-->
 
-    </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="src/js/index.js"></script>
-  </body>
+</body>
 </html>
