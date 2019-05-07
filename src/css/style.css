@@ -8,7 +8,7 @@
 }
 #atomist-logo{
     left:0;
-    width: 200px;
+    z-index: 100;
 }
 #nav-bar{
    color:white;
@@ -16,6 +16,10 @@
 }
 .nav-items{
     color:inherit;
+}
+.nav-items:hover{
+  color:inherit;
+  text-decoration: none;
 }
 #img-goals{
     width: 90vh;
@@ -33,12 +37,19 @@
     width: 100%;
     height:100vh;
     z-index:20;
+    left:-10px;
     visibility: collapse;
 }
 .nav-collapsed{
     color: white;
     font-size: 25px;
-    margin-top: 25px
+    margin-top: 25px;
+    margin-left: 10px;
+
+}
+.nav-collapsed:hover{
+  color: white;
+  text-decoration: none;
 }
 #banner-collapsed{
     position:absolute;
@@ -78,39 +89,41 @@
     #nav-button{
         visibility: hidden;
     }
+    #atomist-logo{
+      width: 200px;
+    }
+    .description{
+      bottom: 100px;
+    }
 }
 @media (max-width: 1200px){
-        #nav-bar{
+    #nav-bar{
         visibility: hidden;
+    }
+    #atomist-logo{
+      width:150px;
     }
 }
 
 /* Pricing Page */
-
+#body-pricing{
+  position: relative;
+  top: 40px;
+  padding-bottom: 200px;
+}
 #title-pricing{
     font-size:55px;
     color: white;
     text-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
-
 .plan-box{
     height: 400px;
     padding-bottom: 100px;
-    /* border-radius: 10px; */
     overflow: hidden;
     max-height: 380px;
+    box-shadow: 0 10px 30px 20px rgba(0,0,0,.05);
+    border-radius: 5px;
 }
-.pb-top{
-border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-}
-.pb-bottom{
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-}
-/* .btn-plan{
-    margin-top: 75px;
-} */
 .btn-plan{
     position: relative;
     bottom: 20px;
@@ -122,7 +135,7 @@ border-bottom-right-radius: 5px;
     font-size: 35px;
 }
 .font-dark-gray{
-    color: rgb(158,158,167);
+    color: rgb(113,114,116);
 }
 .dollar-sign{
     font-size: 18px;
@@ -144,6 +157,10 @@ border-bottom-right-radius: 5px;
 }
 .btn-primary:hover{
     background-color: rgb(67,183,136);
+}
+.btn-primary:active{
+  background-color: rgb(67,183,136);
+
 }
 .btn-secondary{
     color: white;
