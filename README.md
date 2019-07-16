@@ -1,2 +1,2 @@
 # v8-toucans-team-04
-Add-project-description-here | Voyage-8 | https://chingu.io/
+View the sire here: https://chingu-voyages.github.io/v8-toucans-team-04/
