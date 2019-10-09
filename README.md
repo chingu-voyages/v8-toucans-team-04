@@ -5,4 +5,4 @@ In this version, not all pages made it into the scope of our project. Those page
 Parts we built: Landing page, Developer, Pricing, Navigation bar.
 The focus of this project was becoming familiar with GitHub, utilizing an Agile work flow, and building a Responsive site.</br>
 
-View the site here: https://chingu-voyages.github.io/v8-toucans-team-04/
+View the project here: https://chingu-voyages.github.io/v8-toucans-team-04/
